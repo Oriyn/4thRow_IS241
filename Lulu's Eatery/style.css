@@ -1,0 +1,118 @@
+ #root {
+   height:100vh;
+   width:100vw;
+   display:grid;
+   grid-template-rows:3fr 1fr 5fr 5fr;
+   grid-template-columns:1fr 1fr 1fr;
+   grid-template-areas:
+   'bannerArea bannerArea bannerArea'
+   'navArea navArea navArea'
+   'bodyArea bodyArea bodyArea'
+   'footerArea footerArea footerArea';
+ }
+body {	margin:0; }
+
+ 
+ .bodyGrid {
+   grid-area:bodyArea;
+   margin:auto;
+   width:90%;
+   display:grid;
+   padding: 20px;
+   grid-template-rows:3fr 1fr;
+   grid-template-columns:3fr 1fr;
+   grid-template-areas:
+   'maincontent asidebar'
+   'maincontent asidebar'
+ }
+ aside { width: 200px; }
+aside h3 { border-bottom: 1px solid #000000;
+		   padding-bottom: 2px;
+		   margin: 10px;
+		   font-size: 0.90em;
+		   }
+.news { font-size: 0.80em;
+		margin: 10px; }
+.floatright { margin: 10px;
+			  float: right; }
+ .bannerArea {
+	grid-area:bannerArea;
+	background-image: url(assets/lulus.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+ }
+ #navArea { 
+	grid-area: navArea;
+	background-color: black;
+	text-align: center;
+	
+ }
+
+nav li {
+    display: inline-block;
+}
+
+nav a {	text-decoration:none;
+		color:white;
+}
+
+nav li:hover{ background-color: grey; }
+nav a:visited { color: #c4dbad; }
+
+nav { letter-spacing: 0.1em;
+     text-decoration:none;
+     //color:white;
+}
+ 
+ nav ul { list-style-type: none; }
+ 
+.footerArea {
+	grid-area:footerArea;
+	background-color: black;
+    display:grid;
+	color: #ffffff;
+	padding: 10px 10px 10px 10px;
+    grid-template-rows: 1fr 1fr .5fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	'info location'
+	'social social'
+	'totop totop';	
+	
+}	
+.footerArea a:visited { color: #c4dbad; }
+#info { grid-area: info;
+		text-align: center;
+    	font-style: italic;
+        margin:auto;
+}
+#social {
+    margin:auto;
+    grid-area: social;
+	padding: 10px 10px 10px 10px;
+	
+}
+/* #social img{	 
+			margin-top: 50px;
+			padding-right: 30px;
+ } */
+ #location { 
+     grid-area: location;
+     margin:auto;
+ }
+ #totop { grid-area: totop;
+ margin: auto;
+ }
+ .maincontent{
+   grid-area:maincontent;
+   
+ }
+ .asidebar{
+   grid-area:asidebar;
+   background-color: #a6c0cf;
+   background-image: url("assets/brushed-alum-dark.png");
+   
+ }
+
+ 
