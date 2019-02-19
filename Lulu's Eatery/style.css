@@ -115,4 +115,17 @@ nav { letter-spacing: 0.1em;
    
  }
 
+ /* to remove text decoration - GH */
+ a { 
+   text-decoration: none; 
+   color:black; 
+  }
+ a:visited {
+    text-decoration: none; 
+    color: black; 
+  }
+ a:hover { text-decoration: none; color: blue; }
+ a:focus { text-decoration: none; color: blue; }
+ a:hover, a:active { text-decoration: none; color: blue; }
+
  
