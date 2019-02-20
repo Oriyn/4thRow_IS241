@@ -1,4 +1,19 @@
-.grid {
+ #root {
+   height:100vh;
+   width:100vw;
+   display:grid;
+   grid-template-rows:3fr 1fr 5fr 5fr;
+   grid-template-columns:1fr 1fr 1fr;
+   grid-template-areas:
+   'bannerArea bannerArea bannerArea'
+   'navArea navArea navArea'
+   'bodyArea bodyArea bodyArea'
+   'footerArea footerArea footerArea';
+ }
+body {	margin:0; }
+
+ 
+ .grid {
    grid-area:bodyArea;
    justify-items:center;
    background-color: #c4dbad;
@@ -15,7 +30,7 @@
  }
  .bannerArea {
 	grid-area:bannerArea;
-	background-image: url(assets/lulus.jpg);
+	background-image: url(assets/lulusnew.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	
@@ -52,14 +67,21 @@ nav { letter-spacing: 0.1em;
 	background-color: black;
     display:grid;
 	color: #ffffff;
+	padding: 50px 10px 10px 10px;
 	border-top: 6px solid #c4dbad;
 	border-bottom: 6px solid #c4dbad;
-    grid-template-rows: 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr .5fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
-	'social info location';	
+	'info location'
+	'social social'
+	'totop totop';	
+	
 }	
 .footerArea a:visited { color: #c4dbad; }
+ #totop { grid-area: totop;
+ margin: auto;
+ }
 #info { grid-area: info;
 		text-align: center;
     	font-style: italic;
@@ -68,7 +90,13 @@ nav { letter-spacing: 0.1em;
 #social {
     margin:auto;
     grid-area: social;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	
 }
+#social img { margin-top: 50px;
+			  padding-right: 30px;
+ }
  #location { 
      grid-area: location;
      margin:auto;
