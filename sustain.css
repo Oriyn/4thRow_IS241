@@ -1,19 +1,4 @@
- #root {
-   height:100vh;
-   width:100vw;
-   display:grid;
-   grid-template-rows:3fr 1fr 5fr 5fr;
-   grid-template-columns:1fr 1fr 1fr;
-   grid-template-areas:
-   'bannerArea bannerArea bannerArea'
-   'navArea navArea navArea'
-   'bodyArea bodyArea bodyArea'
-   'footerArea footerArea footerArea';
- }
-body {	margin:0; }
-
- 
- .grid {
+.grid {
    grid-area:bodyArea;
    justify-items:center;
    background-color: #c4dbad;
