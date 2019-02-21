@@ -11,6 +11,13 @@
   padding: 15px;
   font-size: 15px;
 }
+.bannerArea {
+	grid-area:bannerArea;
+	background-image: url(assets/lulusnew.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+ }
   h3{
       text-align: center;
       color: black;
