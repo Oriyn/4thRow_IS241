@@ -30,7 +30,7 @@ body {	margin:0; }
  }
  .bannerArea {
 	grid-area:bannerArea;
-	background-image: url(assets/lulusnew.jpg);
+	background-image: url(../lulusnew.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	

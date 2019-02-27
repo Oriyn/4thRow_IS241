@@ -31,7 +31,7 @@ body {	margin:0; }
 h2, p { text-align: center; }
  .bannerArea {
 	grid-area:bannerArea;
-	background-image: url(assets/lulus.jpg);
+	background-image: url(../lulusnew.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	
