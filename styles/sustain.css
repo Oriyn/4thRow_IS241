@@ -35,32 +35,6 @@ body {	margin:0; }
 	background-repeat: no-repeat;
 	
  }
- #navArea { 
-	grid-area: navArea;
-	background-color: black;
-	text-align: center;
-	
- }
-
-nav li {
-    display: inline-block;
-    margin:0;
-}
-
-nav a {	text-decoration:none;
-		color:white;
-}
-
-nav li:hover{ background-color: grey; }
-nav a:visited { color: #c4dbad; }
-
-nav { letter-spacing: 0.1em;
-     text-decoration:none;
-     border-top: 6px solid #c4dbad;
-	 border-bottom: 6px solid #c4dbad;
-}
- 
- nav ul { list-style-type: none; }
  
 .footerArea {
 	grid-area:footerArea;
@@ -123,7 +97,7 @@ nav { letter-spacing: 0.1em;
    margin:auto;
  }
 
-li {
+#liItem {
     margin:40px 0;
 }
 p::first-letter {
