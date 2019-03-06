@@ -1,0 +1,63 @@
+/*Jasmine Gaines wrote this page, Nathan Lee edited*/
+
+.orderGrid {
+	grid-area: bodyArea;
+	grid-template-rows: 4fr;
+	grid-template-columns: 3fr;
+	grid-template-areas:
+	'food food food';	
+}	
+/* #options li { display: inline;
+		 border: solid #808080;
+		 border-width: 1px 1px 0 1px;
+		 margin: 0 5px 0 0;
+		 border-top-left-radius: 4px;
+		 border-top-right-radius: 4px;
+		 font-size: 15px;
+		 background: #ffffff;
+}
+#options a:visited { color: #808080; }
+#options a:hover { color: #8dcaff; }
+#options a:active { background-color: #083b66; }
+#options li a { padding: 0 50px; 
+			text-decoration: none;
+}
+#content { border: 1px solid #000000;
+		   border-left: 0px;
+		   border-right: 0px;
+			clear: both;
+			padding: 13px;
+ }
+#selected { position: relative;
+			top: 2px;
+			background: white;
+}
+#selected a { color: #083b66; } */
+
+#group { border: 3px solid #000000;		
+		 background: #ffffff;
+		 padding: 10px;
+         margin:auto;
+}
+#group td { border-bottom: 1px solid #000000; 
+			padding: 20px;
+}
+.foodimg { float: left; 
+		   padding-right: 10px;
+}
+.price { font-weight: bold;
+		 padding-top: 50px;
+		 float: right;
+		 font-family: Arial Bold, Helvetica, sans-serif;
+}
+.title { font-size: 20px;
+		 color: #008080;
+		 font-family: Arial Bold, Helvetica, sans-serif;
+ }
+ .p { float: right; }
+@media only screen and (max-width: 950px) {
+		 
+ 	#group { margin-left: 50px;
+			margin-right: 50px;
+	}
+}

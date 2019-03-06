@@ -1,0 +1,158 @@
+/*written by Nathan*/
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f5f4f4;
+  font-size: 13px;
+  font-family: 'Arvo', monospace;
+  
+  @supports(display: grid) {
+    display: block;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 1.5em;
+}
+
+.grid {
+  grid-area:bodyArea;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: row dense;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: #0c9a9a;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  background:  url('../assets/food1.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  counter-increment: item-counter;
+}
+.item:nth-of-type(2n) {
+  background-image: url("../assets/food2.jpg");
+}
+.item:nth-of-type(3n) {
+  background-image: url("../assets/food3.jpg");
+}
+.item:nth-of-type(4n) {
+  background-image: url("../assets/food4.jpg");
+}
+.item:nth-of-type(5n) {
+  background-image: url("../assets/food6.jpg");
+}
+.item:nth-of-type(6n) {
+  background-image: url("../assets/food7.jpg");
+}
+.item:nth-of-type(7n) {
+  background-image: url("../assets/food8.jpg");
+}
+.item:nth-of-type(8n) {
+  background-image: url("../assets/food9.jpg");
+}
+.item:nth-of-type(9n) {
+  background-image: url("../assets/food10.jpg");
+}
+.item:nth-of-type(10n) {
+  background-image: url("../assets/food11.jpg");
+}
+.item:nth-of-type(11n) {
+  background-image: url("../assets/food12.jpg");
+}
+.item:nth-of-type(12n) {
+  background-image: url("../assets/food13.jpg");
+}
+.item:nth-of-type(13n) {
+  background-image: url("../assets/food14.jpg");
+}
+.item:nth-of-type(14n) {
+  background-image: url("../assets/food15.jpg");
+}
+.item:nth-of-type(15n) {
+  background-image: url("../assets/food16.jpg");
+}
+.item:nth-of-type(16n) {
+  background-image: url("../assets/food17.jpg");
+}
+.item:nth-of-type(17n) {
+  background-image: url("../assets/food18.jpg");
+}
+.item:nth-of-type(18n) {
+  background-image: url("../assets/food19.jpg");
+}
+.item:nth-of-type(19n) {
+  background-image: url("../assets/food20.jpg");
+}
+.item:nth-of-type(20n) {
+  background-image: url("../assets/food21.jpg");
+}
+.item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+.item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.item:hover:after {
+  opacity: 0;
+}
+.item--medium {
+  grid-row-end: span 2;
+}
+.item--large {
+  grid-row-end: span 3;
+}
+.item--full {
+  grid-column-end: auto;
+}
+@media screen and (min-width: 768px) {
+  .item--full {
+    grid-column: 1/-1;
+    grid-row-end: span 2;
+  }
+}
+.item--details {
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  color: #444;
+  background: #fff;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color: #828282;
+}
+.item--details:before {
+  content: counter(item-counter);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-right: 0.5em;
+  color: #444;
+}

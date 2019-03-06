@@ -1,3 +1,4 @@
+/*written by Gabe*/
 .grid-container {
   display: grid;
   grid-template-columns: 25% 25%;
@@ -7,13 +8,23 @@
   grid-column-gap: 50px;
   grid-row-gap: 15px;
 }
+p {
+    text-align:center;
+}
 .grid-item {  
   padding: 15px;
   font-size: 15px;
 }
+a {
+    color: purple;
+} 
+a:visited {
+    color:red;
+}
+
 .bannerArea {
 	grid-area:bannerArea;
-	background-image: url(../lulusnew.jpg);
+	background-image: url('../assets/lulusnew.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	

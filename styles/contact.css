@@ -1,3 +1,4 @@
+/*written by Jasmine, edited by Nathan and Gabe*/
 .bodyGrid {
    grid-area:bodyArea;
    margin:auto;
@@ -16,50 +17,14 @@
 h2, p { text-align: center; }
  .bannerArea {
 	grid-area:bannerArea;
-	background-image: url(../lulusnew.jpg);
+	background-image: url('../assets/lulusnew.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	
  }
  .details a { padding-right: 80px; }	
  
-.footerArea {
-	grid-area:footerArea;
-	background-color: black;
-    display:grid;
-	color: #ffffff;
-	padding: 50px 10px 10px 10px;
-    grid-template-rows: 1fr 1fr .5fr;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas:
-	'info location'
-	'social social'
-	'totop totop';	
-	
-}	
-.footerArea a:visited { color: #c4dbad; }
-#info { grid-area: info;
-		text-align: center;
-    	font-style: italic;
-        margin:auto;
-}
-#social {
-    margin:auto;
-    grid-area: social;
-	padding: 10px 10px 10px 10px;
-	text-align: center;
-	
-}
-#social img { margin-top: 50px;
-			  padding-right: 30px;
- }
- #location { 
-     grid-area: location;
-     margin:auto;
- }
- #totop { grid-area: totop;
- margin: auto;
- }
+
  .maincontent{
    grid-area:maincontent;
    margin-left: 300px;

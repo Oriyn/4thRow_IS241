@@ -1,4 +1,5 @@
- #root {
+/*Written by Nathan, Jasmine, Gabe*/ 
+#root {
    height:100vh;
    width:100vw;
    display:grid;
@@ -10,37 +11,64 @@
    'bodyArea bodyArea bodyArea'
    'footerArea footerArea footerArea';
  }
-body {	margin:0; }
+body {	margin:0; 
+		background-image: url('../assets/diagonal-striped-brick.png');
+}
 
  
  .bodyGrid {
    grid-area:bodyArea;
    margin:auto;
    width:90%;
-   display:grid;
    padding: 20px;
-   grid-template-rows:3fr 1fr;
-   grid-template-columns:3fr 1fr;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   grid-template-rows:4fr 3fr;
+   grid-template-columns:3fr;
    grid-template-areas:
-   'maincontent asidebar'
-   'maincontent asidebar'
+   'maincontent maincontent maincontent'
+   'gencontent	gencontent	gencontent';
  }
- aside { width: 200px; }
-aside h3 { border-bottom: 1px solid #000000;
-		   padding-bottom: 2px;
-		   margin: 10px;
-		   font-size: 0.90em;
-		   }
-.news { font-size: 0.80em;
-		margin: 10px; }
-.floatright { margin: 10px;
-			  float: right; }
+  .maincontent{
+   grid-area:maincontent;
+   text-align: center;
+ }
+ .gencontent{
+	grid-area: gencontent;
+	background-color: #000000;
+	margin: auto;
+	background-image: url('../assets/food.png');
+	margin-left: 20px;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	'menus specials discounts';
+ }
+ .footerArea {
+	grid-area:footerArea;
+	background-color: black;
+    display:grid;
+	color: #ffffff;
+	padding: 50px 10px 10px 10px;
+	border-top: 6px solid #c4dbad;
+	border-bottom: 6px solid #c4dbad;
+    grid-template-rows: 3fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	'info social location'
+	'totop totop totop';	
+	
+}	
+
+ #storyp { font-size: 25px; 
+			padding-left: 20px;
+			padding-right: 20px;
+			background-color: rgba(0, 0, 0, 0.5); }
+ }
  .bannerArea {
 	grid-area:bannerArea;
-	background-image: url(../lulusnew.jpg);
+	background-image: url('../assets/lulusnew.jpg');
 	background-size: cover;
-	background-repeat: no-repeat;
-	
+	background-repeat: no-repeat;	
  }
  #navArea { 
 	grid-area: navArea;
@@ -57,33 +85,41 @@ nav a {	text-decoration:none;
 		color:white;
 }
 
-nav li:hover{ background-color: grey; }
+nav a:hover{ background-color: grey; }
 nav a:visited { color: #c4dbad; }
 
 nav { letter-spacing: 0.1em;
      text-decoration:none;
-     border-top: 6px solid #c4dbad;
+	 border-top: 6px solid #c4dbad;
 	 border-bottom: 6px solid #c4dbad;
 }
- 
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
+}
+
+.sticky + .maincontent{
+  padding-top: 60px;
+}
  nav ul { list-style-type: none; }
- 
-.footerArea {
-	grid-area:footerArea;
-	background-color: black;
-    display:grid;
-	color: #ffffff;
-	padding: 50px 10px 10px 10px;
-	border-top: 6px solid #c4dbad;
-	border-bottom: 6px solid #c4dbad;
-    grid-template-rows: 1fr 1fr .5fr;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas:
-	'info location'
-	'social social'
-	'totop totop';	
-	
-}	
+ h2 { font-size: 50px; }
+ .story { color: #eaeaea;
+		  font-family: Marker Felt, fantasy; 
+		  text-align: center;
+		  letter-spacing: .07em;
+ }
+ #back { background-image: url('../assets/cutcube.png');
+		 background-color: #001836;
+		 padding-bottom: 40px;
+		 padding-top: 50px;
+		 margin-top: 70px;	 
+ }
 .footerArea a:visited { color: #c4dbad; }
 #info { grid-area: info;
 		text-align: center;
@@ -111,21 +147,46 @@ nav { letter-spacing: 0.1em;
  #totop { grid-area: totop;
  margin: auto;
  }
- .maincontent{
-   grid-area:maincontent;
-   
+ #menu { grid-area: menu;
+			border: 1px solid #000000;
+			//background-color: rgba(201, 157, 227);
+			background-color: #502294;
+			padding: 20px;
+			text-align: center;
+			background-image: url('../assets/food.png');
+            color:white;
  }
- .asidebar{
-   grid-area:asidebar;
-   background-color: #a6c0cf;
-   background-image: url("assets/brushed-alum-dark.png");
-   
+
+/*#menu a:visited {
+    color:white;
+}
+#menu a {
+    color:white;
+}*/
+ #menu #specials #discounts p { font-size: 25px; } 
+ 
+  #specials { grid-area: menu;
+			border: 1px solid #000000;
+			background-color: #233696;
+			padding: 20px;
+			text-align: center;
+			background-image: url('../assets/swirl.png');
  }
+  #discounts { grid-area: menu;
+			border: 1px solid #000000;
+			background-color: #20618c;
+			padding: 20px;
+			text-align: center;
+			background-image: url('../assets/diagmonds-light.png');
+ }
+ #h2 { color: #}
+
 form { background-color:#eaeaea;
 	   font-family: Arial, sans-serif;
        padding: 10px;
 	   min-width: 400px;
 	   margin-right: 500px;
+	   margin-left: 400px;
 	   }
 label { float: left;
 	    width: 150px; 
@@ -138,14 +199,152 @@ input, textarea { margin-top: 10px;
                   display: block;
 				  } 
 #mySubmit { margin-left: 160px; }
- 
- #logo { position: relative;
+
+ /* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  z-index:2;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+    left:0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 97%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* end of slideshow css */
+  #logo { position: relative;
 		 -webkit-animation-name: fade;
-		 -webkit-animation-duration: 4s;
+		 -webkit-animation-duration: 2s;
 		 animation-name: fade;
-		 animation-duration: 4s;
+		 animation-duration: 2s;
  }
  @-webkit-keyframes fade {
-	from {opacity: .1}
+	from {opacity: .7}
 	to {opacity: 1}
  }
+ 
+ /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+@media only screen and (max-width: 950px) {
+		 
+ 	.bannerArea {
+	grid-area:bannerArea;
+	background-image: url('../assets/lulus.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+    .bannerArea{
+    grid-area:bannerArea;
+	background-image: url('../assets/lulusnew.jpg');
+	background-repeat: no-repeat;
+    }
+}
+
+
+@media only screen and (max-width: 1920px) {
+    .bannerArea{
+    grid-area:bannerArea;
+	background-image: url('../assets/lulusnew.jpg');
+	background-repeat: no-repeat;
+    background-size:cover;
+    }
+}
+
+a:visited {
+    color: white;
+}
+a {
+    color:white;
+}
