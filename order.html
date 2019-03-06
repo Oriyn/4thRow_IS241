@@ -1,0 +1,153 @@
+<!--Jasmine designed page, Nathan edited for bug fix-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lulu's Local Eatery</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/order.css">
+
+  </head>
+  <body>
+    <div id = root>
+		<div class= bannerArea>
+			<a href="index.html#logo"><img src="assets/logo2.png" id="logo" alt="lulu's home logo"></a>
+		</div>
+		<div id = navArea>
+			<nav id="navbar">
+				<ul id="navul">		
+					<li><a href="index.html">Home</a></li>
+					<li><a href="food.html">Food</a></li>
+					<li><a href="location.html">Location</a></li>
+					<li><a href="sustain.html">Sustainability</a></li>
+					<li><a href="order.html">Order Now</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("navbar");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				  } else {
+					navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+		</div>
+				<div class = bodyGrid>
+					<div class=maincontent>
+						<img src="assets/logo3.png" alt="lulu's local eatery" id="imgfront"><br>
+			 			 
+					</div>	
+				<div class= orderGrid>
+					<div class = food>
+						<!-- <div id="options">
+							<ul>
+								<li id="selected">
+								Entrees
+								</li>
+								<li>
+								Wraps & Sandwiches
+								</li>
+								<li>
+								Starters, Salads & Sides
+								</li>
+								<li>
+								Kids Menu
+								</li>
+							</ul>
+						</div>
+						<section id="content">
+							
+						</section> -->
+						<table id="group">
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/food1.jpg" alt="Buffalo Cauliflower Bites" height="150px">
+								<div class="title">Buffalo Cauliflower Bites</div><br>
+								Buffalo Cauliflower Bites servered with a ranch dipping sauce
+								<br><br><div class="price">$5.95</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/food2.jpg" alt="Buffalo Cauliflower Bites" height="150px">
+								<div class="title">Kale Salad</div>
+								Kale Salad with cranberries, shredded carrot, sunflower seeds, and maple mustard vinagerette
+								<br><br><div class="price">$6.95</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/tatertots.jpg" alt="" height="150px" width="230px">
+								<div class="title">Tater Tots</div><br><br>
+								Tots served with cajun seasoning and spicy chipotle dipping sauce
+								<br><br><div class="price">$3.95</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/food22.jpg" alt="" height="150px" width="230px">
+								<div class="title">Mac N' Cheese</div><br><br>
+								Organic gluten-less noodles smothered in house-made butternut squash cheese sauce topped with walnut parmesan (make it chili buffalo, pesto, or nacho mac for no extra charge)
+								<br><br><div class="price">$6.49</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/chili.jpg" alt="" height="150px" width="230px">
+								<div class="title">Lulu's Chili</div><br><br>
+								Smoky chipotle chili with qunoa sweet potatoes, onion, red kidney beans, black beans, and tomatoes topped with housemade butternut squash cheese, sour cream, green onion, and cilantro
+								<br><br><div class="price">$5.95</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/dish.jpg" alt="" height="150px" width="230px">
+								<div class="title">Volcano Tots</div><br><br>
+								Tater tots smothered in lulu's chili housemade butternut squash cheese sauce, sour cream, and garnish with green onion and cilantro
+								<br><br><div class="price">$5.95 Small<br>
+								$8.95 Large</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+                    </div>
+				</div><br><br>
+				<div class=footerArea>
+					   <div id= social>
+						  <a href="https://www.facebook.com/pg/Lulus-Local-Eatery-132285260224330/photos/?ref=page_internal" target="_blank"><img src="assets/twitter2.png" alt="Twitter"></a>
+						  
+						  <a href="https://www.facebook.com/pg/Lulus-Local-Eatery-132285260224330/photos/?ref=page_internal" target="_blank"><img src="assets/facebook.png" alt="FaceBook"></a>
+						  
+						  <a href="https://www.youtube.com/watch?v=18LAsnNGTlw" target="_blank"><img src="assets/youtube.png" alt="YouTube"></a><br>
+						  <br>
+						  <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome" target="_blank"><img src="assets/snapchat.png" alt="Snapchat"></a>
+						  
+						  <a href="https://www.twitch.tv/login" target="_blank"><img src="assets/twitch.png" alt="Twitch"></a><br>
+						</div>
+					  <div id= info>
+						<a href="https://www.google.com/maps/place/Lulu's+Local+Eatery,+LLC/@38.5989912,-90.2430857,15z/data=!4m8!1m2!3m1!2sLulu's+Local+Eatery,+LLC!3m4!1s0x0:0x5e32f72323d673d7!8m2!3d38.5989918!4d-90.2430859" target="_blank" >3201 S Grand Ave St. Louis, MO 63118</a><br><br>
+						314-300-8215 // Monday - Saturday 11:30am-9pm<br><br>
+						ping pong bar above lulu's open all day // full bar open 5pm-12am<br><br>
+						PURCHASE A GIFT CARD<br><br>
+						Copyright &copy; 2018<br><br>
+					  </div>
+					  <div id = location>
+						<img src="assets/location.png" alt="location">
+					  </div>
+					  <div id = totop>
+						<a href="#logo"><img src="assets/totop.png" alt="to top" height="100px"></a>
+                    </div>
+                    </div>
+      </div>
+  </body>
+</html>
