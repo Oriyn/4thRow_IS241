@@ -85,8 +85,8 @@ nav a {	text-decoration:none;
 		color:white;
 }
 
-nav a:hover{ background-color: grey; }
-nav a:visited { color: #c4dbad; }
+nav li a:hover{ color: #c4dbad;  }
+nav a:visited { color:white; }
 
 nav { letter-spacing: 0.1em;
      text-decoration:none;

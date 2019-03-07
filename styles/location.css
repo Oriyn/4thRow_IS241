@@ -25,7 +25,6 @@ body {	margin:0; }
 	background-color: black;
 	text-align: center;
  }
-
 nav li {
     display: inline-block;
 	padding-right: 20px;
@@ -35,9 +34,8 @@ nav a {	text-decoration:none;
 		color:white;
 }
 
-nav li:hover{ background-color: grey; }
-nav a:visited { color: #c4dbad; }
-
+nav li a:hover{ color: #c4dbad;  }
+nav a:visited { color:white; }
 nav { letter-spacing: 0.1em;
      text-decoration:none;
      border-top: 6px solid #c4dbad;
