@@ -195,7 +195,7 @@ label { float: left;
 	    padding-right: 10px;
 	    margin-top: 10px;
 		}
-input, textarea { margin-top: 10px; 
+.indexinput, #textarea { margin-top: 10px; 
                   display: block;
 				  } 
 #mySubmit { margin-left: 160px; }
