@@ -20,7 +20,6 @@
 	background-color: #000000;
 	margin: auto;
 	background-image: url('../assets/food.png');
-	margin-left: 20px;
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:

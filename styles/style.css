@@ -129,13 +129,6 @@ nav { letter-spacing: 0.1em;
 			background-image: url('../assets/food.png');
             color:white;
  }
-
-/*#menu a:visited {
-    color:white;
-}
-#menu a {
-    color:white;
-}*/
  #menu #specials #discounts p { font-size: 25px; } 
  
   #specials { grid-area: menu;

@@ -17,7 +17,12 @@
 	grid-area:content;
 	text-align:center;
 	margin:auto;
-  padding-left:50px;
+    background-image:url('../assets/textbackground.png');
+    background-position:center;
+    margin-left:30px;
+    box-shadow:5px 10px;
+    background-size:cover;
+    border:2px solid black;
 }
 .item {
   grid-area: item;
@@ -26,7 +31,6 @@
   background-size:contain;
   background-position:center;
   padding: 15px;
-  font-size: 15px;
 }
 .item2 {
   grid-area: item2;
@@ -35,7 +39,6 @@
   background-size:contain;
   background-position:center;
   padding: 15px;
-  font-size: 15px;
 }
 .item3 {
   grid-area: item3;
@@ -44,7 +47,6 @@
   background-size:contain;  
   background-position:center;
   padding: 15px;
-  font-size: 15px;
 }
 .item4 {
   grid-area: item4;
@@ -53,7 +55,6 @@
   background-size:contain;  
   background-position:center;
   padding: 15px;
-  font-size: 15px;
 }
 .item5 {
   grid-area: item5;
@@ -62,7 +63,7 @@
   background-size:contain;  
   background-position:center;
   padding: 15px;
-  font-size: 15px;
+  margin-left:30px;
 }
 .item6 {
   grid-area: item6;
@@ -71,7 +72,6 @@
   background-size:contain;  
   background-position:center;
   padding: 15px;
-  font-size: 15px;
 }
 .item7 {
   grid-area: item7;
@@ -80,22 +80,13 @@
   background-size:contain;  
   background-position:center;
   padding: 15px;
-  font-size: 15px;
 }
 a {
-    color: green;
+    color: darkgreen;
 } 
 a:visited {
     color:darkgreen;
 }
-
-.bannerArea {
-	grid-area:bannerArea;
-	background-image: url('../assets/lulusnew.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	
- }
   h3{
       text-align: center;
       color: black;
