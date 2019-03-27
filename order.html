@@ -49,6 +49,31 @@
 					</div>	
 				<div class= orderGrid>
 					<div class = food>
+						<table id="key">
+							<tr>
+								<td>
+								<img src="assets/gl2.png" height="35px" alt="gluten less">
+								</td>
+								<td>
+								<img src="assets/sf2.png" height="35px" alt="soy free">
+								</td>
+								<td>
+								<img src="assets/nf2.png" height="35px" alt="nut free">
+								</td>
+							</tr>
+							<tr>
+								<td>
+								gluten-less
+								</td>
+								<td>
+								soy free
+								</td>
+								<td>
+								nut free
+								</td>
+							</tr>
+						</table>
+						<br><br>
 						<div class="tab">
 						  <button  onclick="openTab('Starters')">Starters, Salads, & Sides</button>
 						  <button onclick="openTab('Wraps')">Wraps & Sandwiches</button>
@@ -60,13 +85,6 @@
 						<div id="Starters" class="tabs">
 						  <table id="group">
 						  <th>* Starters, Salads, & Sides *</th>
-						  <tr>
-								<td id="key">
-								<img src="assets/gl2.png" height="50px" alt="gluten less">gluten-less&nbsp;&nbsp;&nbsp;&nbsp;
-								<img src="assets/sf2.png" height="50px" alt="soy free">soy free&nbsp;&nbsp;&nbsp;&nbsp;
-								<img src="assets/nf2.png" height="50px" alt="nut free">nut free
-								</td>
-							</tr>
 							<tr>
 								<td>
 								<img class="foodimg" src="assets/food1.jpg" alt="Buffalo Cauliflower Bites" height="150px">
@@ -90,7 +108,7 @@
 										Buffalo Cauliflower Bites servered with a ranch dipping sauce 
 										</p>
 										<div class="options">
-										<h4>Choose a Side item</h4>
+										<h4>Choose a side item</h4>
 										<div class="checkboxes">
 											<label class="container">Ranch
 											<input type="checkbox" checked="checked">
@@ -122,7 +140,6 @@
 									<!--End of Modal One-->
 									  <br>
 									</div>
-								</div>
 									
 								</td>
 							</tr>
@@ -194,7 +211,7 @@
 								<!-- Trigger/Open The Modal -->
 								<a href="#modalThree" class="title" data-modal="modalThree" id="Title">Tater Tots</a>
 								<div id="contains">
-								<img src="assets/gl2.png" height="30px" alt="gluten less"></div></div><br><br>
+								<img src="assets/gl2.png" height="30px" alt="gluten less"></div><br><br>
 								Tots served with cajun seasoning and spicy chipotle dipping sauce
 								<br><br><div class="price">$3.95</div>
 								<!-- Beginning of Modal Three-->
@@ -246,7 +263,7 @@
 								<!-- Trigger/Open The Modal -->
 								<a href="#modalFour" class="title" data-modal="modalFour" id="Title">Mac N' Cheese</a>
 								<div id="contains">
-								<img src="assets/gl2.png" height="30px" alt="gluten less"></div></div><br><br>
+								<img src="assets/gl2.png" height="30px" alt="gluten less"></div><br><br>
 								Organic gluten-less noodles smothered in house-made butternut squash cheese sauce topped with walnut parmesan (make it chili buffalo, pesto, or nacho mac for no extra charge)
 								<br><br><div class="price">$6.49</div>
 								<!-- Beginning of Modal Four-->
@@ -272,7 +289,6 @@
 											<span class="checkmark"></span>
 											</label>
 										</div>
-										<br><br><br>
 										<h4>Upgrade, at No Extra Charge!</h4>
 										<div class="checkboxes">
 											<label class="container">
@@ -365,7 +381,7 @@
 								<img class="foodimg" src="assets/dish.jpg" alt="" height="150px" width="230px">
 								<!-- Trigger/Open The Modal -->
 								<a href="#modalSix" class="title" data-modal="modalSix" id="Title">Volcano Tots</a><div id="contains">
-								<img src="assets/gl2.png" height="30px" alt="gluten less"></div></div><br><br>
+								<img src="assets/gl2.png" height="30px" alt="gluten less"></div><br><br>
 								Tater tots smothered in lulu's chili housemade butternut squash cheese sauce, sour cream, and garnish with green onion and cilantro
 								<br><br><div class="price">$5.95 Small<br>
 								$8.95 Large</div>
@@ -407,6 +423,609 @@
 										</div>
 										<br><br><br><br><br>
 									</div>
+									<br><br><br><br>
+									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
+									<br><br>
+									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$5.95</span></div><br><br><br>
+									<button class="addcancelbtn">Add to Cart</button>
+									<button class="addcancelbtn" id="cancel">Cancel</button>
+									</div>	
+									</div> 
+									<!--End of Modal Six-->
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/loadednachos.jpg" alt="Loaded Nachos" height="150px" width="230px">
+								<!-- Trigger/Open The Modal -->
+								<a href="#modalSeven" class="title" data-modal="modalSeven" id="Title">Loaded Nachos</a><div id="contains">
+								<img src="assets/gl2.png" height="30px" alt="gluten less"></div><br><br>
+								Tortilla chips topped with jackfruit carnitas
+								and smothered with house-made butternut
+								squash cheese sauce, salsa, sour cream
+								and garnished with green onion, pickled
+								jalapeño and cilantro
+								<br><br><div class="price">
+								$8.95</div>
+								<!-- Beginning of Modal Seven-->
+								<div id="modalSeven" class="modal">
+								  <div class="modal-content">
+									  <span class="close">&times;</span>
+									  <h3>Customize Your Order</h3>
+										<div id="modaltitle">
+										Loaded Nachos<div id="contains">
+										<img src="assets/gl2.png" height="30px" alt="gluten less">
+										</div>
+										</div><div id="modal-price">
+										$8.95</div><br>
+										<img src="assets/loadednachos.jpg" alt="Loaded Nachos" height="250px">
+										<br><br>
+										<p>
+										Tortilla chips topped with jackfruit carnitas
+										and smothered with house-made butternut
+										squash cheese sauce, salsa, sour cream
+										and garnished with green onion, pickled
+										jalapeño and cilantro
+										</p>
+										<div class="options">
+										<h4>Choose or Remove a Topping</h4>
+										<div class="checkboxes">
+											<label class="container">Butternut Squash Cheese
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Jackfruit Carnitas
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Salsa
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Sour Cream
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Green Onion
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Pickled Jalapeño
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Cilantro
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<br><br><br><br><br>
+										</div>
+									</div>
+									<br><br><br><br>
+									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
+									<br><br>
+									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$8.95</span></div><br><br><br>
+									<button class="addcancelbtn">Add to Cart</button>
+									<button class="addcancelbtn" id="cancel">Cancel</button>
+									</div>	
+									</div> 
+									<!--End of Modal Seven-->
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/nachotots.jpg" alt="Loaded Nacho Tots" height="150px" width="230px">
+								<!-- Trigger/Open The Modal -->
+								<a href="#modalEight" class="title" data-modal="modalEight" id="Title">Loaded Nacho Tots</a><div id="contains">
+								<img src="assets/gl2.png" height="30px" alt="gluten less"></div><br><br>
+								tater tots topped with jackfruit carnitas
+								and smothered with house-made butternut
+								squash cheese sauce, salsa, sour cream
+								and garnished with green onion, pickled
+								jalapeño and cilantro
+								<br><br><div class="price">
+								$6.95 - Small<br>
+								$9.95 - Large</div>
+								<!-- Beginning of Modal Eight-->
+								<div id="modalEight" class="modal">
+								  <div class="modal-content">
+									  <span class="close">&times;</span>
+									  <h3>Customize Your Order</h3>
+										<div id="modaltitle">
+										Loaded Nacho Tots<div id="contains">
+										<img src="assets/gl2.png" height="30px" alt="gluten less">
+										</div>
+										</div><div id="modal-price">
+										$8.95</div><br>
+										<img src="assets/nachotots.jpg" alt="Loaded Nacho Tots" height="250px">
+										<br><br>
+										<p>
+										tater tots topped with jackfruit carnitas
+										and smothered with house-made butternut
+										squash cheese sauce, salsa, sour cream
+										and garnished with green onion, pickled
+										jalapeño and cilantro
+										</p>
+										<div class="options">
+										<h4>Choose or Remove a Topping</h4>
+										<div class="checkboxes">
+											<label class="container">Butternut Squash Cheese
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Jackfruit Carnitas
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Salsa
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Sour Cream
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Green Onion
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Pickled Jalapeño
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Cilantro
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<br><br><br><br><br>
+										</div>
+									</div>
+									<br><br><br><br>
+									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
+									<br><br>
+									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
+									<button class="addcancelbtn">Add to Cart</button>
+									<button class="addcancelbtn" id="cancel">Cancel</button>
+									</div>	
+									</div> 
+									<!--End of Modal Eight-->
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/kalesalad.jpg" alt="Kale & Brussells Sprouts Caesar Salad" height="150px" width="230px">
+								<!-- Trigger/Open The Modal -->
+								<a href="#modalNine" class="title" data-modal="modalNine" id="Title">Kale & Brussells Sprouts Caesar Salad</a><div id="contains">
+								<img src="assets/gl2.png" height="30px" alt="gluten less"></div><br><br>
+								Shredded kale and brussels sprouts with
+								a creamy, house-made caesar dressing,
+								chickpea croutons, capers, lemon and
+								walnut parmesan
+								<br><br><div class="price">
+								$8.95</div>
+								<!-- Beginning of Modal Nine-->
+								<div id="modalNine" class="modal">
+								  <div class="modal-content">
+									  <span class="close">&times;</span>
+									  <h3>Customize Your Order</h3>
+										<div id="modaltitle">
+										Kale & Brussells Sprouts Caesar Salad<div id="contains">
+										<img src="assets/gl2.png" height="30px" alt="gluten less">
+										</div>
+										</div><div id="modal-price">
+										$8.95</div><br>
+										<img src="assets/kalesalad.jpg" alt=" Kale & Brussells Sprouts Caesar Salad" height="250px">
+										<br><br>
+										<p>
+										Shredded kale and brussels sprouts with a creamy, house-made caesar dressing, chickpea croutons, capers, lemon and walnut parmesan 
+										</p>
+										<div class="options">
+										<h4>Choose or Remove a Topping</h4>
+										<div class="checkboxes">
+											<label class="container">Chickpea Croutons
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Capers
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Lemon
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Walnut Parmesan
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<br><br><br><br><br>
+										</div>
+									</div>
+									<br><br><br><br>
+									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
+									<br><br>
+									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
+									<button class="addcancelbtn">Add to Cart</button>
+									<button class="addcancelbtn" id="cancel">Cancel</button>
+									</div>	
+									</div> 
+									<!--End of Modal Nine-->
+								</td>
+							</tr>
+						</table>
+						<!--End of Tab One-->
+						
+						<!--Tab Two-->
+						<div id="Wraps" class="tabs" style="display:none">
+						  <table id="group">
+						  <th>* Wraps & Sandwiches *</th>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/falafel.jpg" alt="Sweet Potato Falafel" height="150px" width="220px">
+								<div class="title">
+								<!-- Trigger/Open The Modal -->
+								<a href="#modalTen" class="title" id="Title" data-modal="modalTen">Sweet Potato Falafel</a>
+								</div>
+								Our version of the mediterranean sandwich.
+								house-made crispy sweet potato fritters,
+								cucumber, red onion, fresh greens and
+								tzaziki sauce in a warm pita
+								<br><br><div class="price">$6.95</div>
+								
+								<!--Beginning of Modal Ten -->
+								<div id="modalTen" class="modal">
+								  <div class="modal-content">
+									  <a class="close">&times;</a>
+									  <h3>Customize Your Order</h3>
+										<div id="modaltitle">
+										Sweet Potato Falafel<br><br>
+										</div><div id="modal-price">$6.95</div><br>
+										<img src="assets/falafel.jpg" alt="Sweet Potato Falafel" height="250px">
+										<br><br>
+										<p>
+										Our version of the mediterranean sandwich.
+										house-made crispy sweet potato fritters,
+										cucumber, red onion, fresh greens and
+										tzaziki sauce in a warm pita 
+										</p>
+										<div class="options">
+										<br><br>
+										<h4>Choose or Remove a Topping</h4>
+										<div class="checkboxes">
+											<label class="container">Cucumbers
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Red Onion
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Fresh Greens
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Tzaziki Sauce
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+										</div>
+										<h4>Choose a side item</h4>
+										<div class="checkboxes">
+											<label class="container">Billy Goat Chips<br>
+											(+ $1.00)
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Tater Tots<br>
+											(+ $2.00)
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Kale Salad<br>
+											(+ $3.00)
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											</div>
+										<br><br><br><br><br>
+									</div>
+									<br><br><br><br>
+									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
+									<br><br><br>
+									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
+									<button class="addcancelbtn">Add to Cart</button>
+									<button class="addcancelbtn" id="cancel">Cancel</button>
+									</div>	
+									</div> 
+									<!--End of Modal Ten-->
+									  <br>
+									</div>	
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/food6.jpg" alt="Bauffalo Caesar Wrap" height="150px" width="200px">
+								<!-- Trigger/Open The Modal -->
+								<a href="#modalEleven" class="title" data-modal="modalEleven" id="Title">Buffalo Caesar Wrap</a><br>
+								House-made crispy buffalo cauliflower
+								bites on a whole wheat tortilla with
+								shredded kale and brussels sprouts with
+								a creamy, house-made caesar dressing
+								and chickpea croutons
+								<br><br><div class="price">$8.95</div>
+								
+								<!-- Beginning of Modal Eleven-->
+								<div id="modalEleven" class="modal">
+								  <div class="modal-content">
+									  <span class="close">&times;</span>
+									  <h3>Customize Your Order</h3>
+										<div id="modaltitle">
+										Buffalo Caesar Wrap
+										</div><div id="modal-price">$8.95</div><br>
+										<img src="assets/food6.jpg" alt="Buffalo Caesar Wrap" height="250px">
+										<br><br>
+										<p>
+										House-made crispy buffalo cauliflower
+										bites on a whole wheat tortilla with
+										shredded kale and brussels sprouts with
+										a creamy, house-made caesar dressing
+										and chickpea croutons
+										</p>
+										<div class="options">
+										<h4>Choose a Side</h4>
+										<div class="checkboxes">
+											<label class="container">House-made<br> 
+											Caesar Dressing
+											<input type="checkbox" checked="checked" checked>
+											<span class="checkmark"></span>
+											</label>
+										</div>
+										<h4>Choose or Remove a Topping</h4>
+										<div class="checkboxes">
+											<label class="container">Shredded Kale
+											<input type="checkbox" checked="checked" checked>
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Brussels Sprouts 
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Chickpea <br>Croutons
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+										</div>
+										<br><br><br><br><br>
+									</div>
+									<br><br><br><br>
+									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
+									<br><br>
+									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$8.95</span></div><br><br><br>
+									<button class="addcancelbtn">Add to Cart</button>
+									<button class="addcancelbtn" id="cancel">Cancel</button>
+									</div>	
+									</div> 
+									<!--End of Modal Two-->
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/tatertots.jpg" alt="" height="150px" width="230px">
+								<!-- Trigger/Open The Modal -->
+								<a href="#modalThree" class="title" data-modal="modalThree" id="Title">Tater Tots</a>
+								<div id="contains">
+								<img src="assets/gl2.png" height="30px" alt="gluten less"></div><br><br>
+								Tots served with cajun seasoning and spicy chipotle dipping sauce
+								<br><br><div class="price">$3.95</div>
+								<!-- Beginning of Modal Three-->
+								<div id="modalThree" class="modal">
+								  <div class="modal-content">
+									  <span class="close">&times;</span>
+									  <h3>Customize Your Order</h3>
+										<div id="modaltitle">
+										Tater Tots<div id="contains">
+										<img src="assets/gl2.png" height="30px" alt="gluten less">
+										</div>
+										</div><div id="modal-price">$3.95</div><br>
+										<img src="assets/tatertots.jpg" alt="Tater Tots" height="250px">
+										<br><br>
+										<p>
+										Tots served with cajun seasoning and spicy chipotle dipping sauce 
+										</p>
+										<div class="options">
+										<h4>Choose a side item</h4>
+										<div class="checkboxes">
+											<label class="container">Chipotle Dipping Sauce
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											</div>
+										<h4>Choose or Remove a Topping</h4>
+										<div class="checkboxes">
+											<label class="container">Cajun Seasoning
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+										</div>
+										<br><br><br><br><br>
+									</div>
+									<br><br><br><br>
+									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
+									<br><br>
+									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$3.95</span></div><br><br><br>
+									<button class="addcancelbtn">Add to Cart</button>
+									<button class="addcancelbtn" id="cancel">Cancel</button>
+									</div>	
+									</div> 
+									<!--End of Modal Three-->
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/mac.jpg" alt="" height="150px" width="230px">
+								<!-- Trigger/Open The Modal -->
+								<a href="#modalFour" class="title" data-modal="modalFour" id="Title">Mac N' Cheese</a>
+								<div id="contains">
+								<img src="assets/gl2.png" height="30px" alt="gluten less"></div><br><br>
+								Organic gluten-less noodles smothered in house-made butternut squash cheese sauce topped with walnut parmesan (make it chili buffalo, pesto, or nacho mac for no extra charge)
+								<br><br><div class="price">$6.49</div>
+								<!-- Beginning of Modal Four-->
+								<div id="modalFour" class="modal">
+								  <div class="modal-content">
+									  <span class="close">&times;</span>
+									  <h3>Customize Your Order</h3>
+										<div id="modaltitle">
+										Mac N' Cheese<div id="contains">
+										<img src="assets/gl2.png" height="30px" alt="gluten less">
+										</div>
+										</div><div id="modal-price">$6.49</div><br>
+										<img src="assets/mac.jpg" alt="Mac N' Cheese" height="250px">
+										<br><br>
+										<p>
+										Organic gluten-less noodles smothered in house-made butternut squash cheese sauce topped with walnut parmesan (make it chili buffalo, pesto, or nacho mac for no extra charge)
+										</p>
+										<div class="options">
+										<h4>Choose or Remove a Topping</h4>
+										<div class="checkboxes">
+											<label class="container">Walnut Parmesan
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+										</div>
+										<h4>Upgrade, at No Extra Charge!</h4>
+										<div class="checkboxes">
+											<label class="container">
+											<input type="checkbox" checked="checked">Chili Buffalo
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">
+											<input type="checkbox" checked="checked">Peso
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">
+											<input type="checkbox" checked="checked">Nacho Mac
+											<span class="checkmark"></span>
+											</label>
+										</div>
+										<br><br><br><br><br>
+									</div>
+									<br><br><br><br>
+									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
+									<br><br>
+									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.49</span></div><br><br><br>
+									<button class="addcancelbtn">Add to Cart</button>
+									<button class="addcancelbtn" id="cancel">Cancel</button>
+									</div>	
+									</div> 
+									<!--End of Modal Four-->
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/chili.jpg" alt="Lulu's Chili" height="150px" width="230px">
+								<!-- Trigger/Open The Modal -->
+								<a href="#modalFive" class="title" data-modal="modalFive" id="Title">Lulu's Chili</a><div id="contains">
+								<img src="assets/gl2.png" height="30px" alt="gluten less">
+								<img src="assets/nf2.png" height="30px" alt="nut free"></div><br><br>
+								Smoky chipotle chili with qunoa sweet potatoes, onion, red kidney beans, black beans, and tomatoes topped with housemade butternut squash cheese, sour cream, green onion, and cilantro
+								<br><br><div class="price">$5.95</div>
+								<!-- Beginning of Modal Five-->
+								<div id="modalFive" class="modal">
+								  <div class="modal-content">
+									  <span class="close">&times;</span>
+									  <h3>Customize Your Order</h3>
+										<div id="modaltitle">
+										Lulu's Chili<div id="contains">
+										<img src="assets/gl2.png" height="30px" alt="gluten less">
+										<img src="assets/nf2.png" height="30px" alt="nut free">
+										</div>
+										</div><div id="modal-price">$5.95</div><br>
+										<img src="assets/chili.jpg" alt="Lulu's Chili" height="250px">
+										<br><br>
+										<p>
+										Smoky chipotle chili with qunoa sweet potatoes, onion, red kidney beans, black beans, and tomatoes topped with housemade butternut squash cheese, sour cream, green onion, and cilantro
+										</p>
+										<div class="options">
+										<h4>Choose or Remove a Topping</h4>
+										<div class="checkboxes">
+											<label class="container">Butternut Squash Cheese
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Sour Cream
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Green Onion
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Cilantro
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+										</div>
+										
+										<br><br><br><br><br>
+									</div>
+									<br><br><br><br>
+									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
+									<br><br>
+									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$5.95</span></div><br><br><br>
+									<button class="addcancelbtn">Add to Cart</button>
+									<button class="addcancelbtn" id="cancel">Cancel</button>
+									</div>	
+									</div> 
+									<!--End of Modal Five-->
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<img class="foodimg" src="assets/dish.jpg" alt="" height="150px" width="230px">
+								<!-- Trigger/Open The Modal -->
+								<a href="#modalSix" class="title" data-modal="modalSix" id="Title">Volcano Tots</a><div id="contains">
+								<img src="assets/gl2.png" height="30px" alt="gluten less"></div><br><br>
+								Tater tots smothered in lulu's chili housemade butternut squash cheese sauce, sour cream, and garnish with green onion and cilantro
+								<br><br><div class="price">$5.95 Small<br>
+								$8.95 Large</div>
+								<!-- Beginning of Modal Six-->
+								<div id="modalSix" class="modal">
+								  <div class="modal-content">
+									  <span class="close">&times;</span>
+									  <h3>Customize Your Order</h3>
+										<div id="modaltitle">
+										Volcano Tots<div id="contains">
+										<img src="assets/gl2.png" height="30px" alt="gluten less">
+										</div>
+										</div><div id="modal-price">Small - $5.95<br>
+										Large - $8.95</div><br>
+										<img src="assets/dish.jpg" alt="Volcano Tots" height="250px">
+										<br><br>
+										<p>
+										Tater tots smothered in lulu's chili housemade butternut squash cheese sauce, sour cream, and garnish with green onion and cilantro
+										</p>
+										<div class="options">
+										<h4>Choose or Remove a Topping</h4>
+										<div class="checkboxes">
+											<label class="container">Butternut Squash Cheese
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Sour Cream
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Green Onion
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+											<label class="container">Cilantro
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+											</label>
+										</div>
+										<br><br><br><br><br>
 									<br><br><br><br>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
 									<br><br>
@@ -501,7 +1120,7 @@
 								<img class="foodimg" src="assets/nachotots.jpg" alt="Loaded Nacho Tots" height="150px" width="230px">
 								<!-- Trigger/Open The Modal -->
 								<a href="#modalEight" class="title" data-modal="modalEight" id="Title">Loaded Nacho Tots</a><div id="contains">
-								<img src="assets/gl2.png" height="30px" alt="gluten less"></div></div><br><br>
+								<img src="assets/gl2.png" height="30px" alt="gluten less"></div><br><br>
 								tater tots topped with jackfruit carnitas
 								and smothered with house-made butternut
 								squash cheese sauce, salsa, sour cream
@@ -580,7 +1199,7 @@
 								<img class="foodimg" src="assets/kalesalad.jpg" alt="Kale & Brussells Sprouts Caesar Salad" height="150px" width="230px">
 								<!-- Trigger/Open The Modal -->
 								<a href="#modalNine" class="title" data-modal="modalNine" id="Title">Kale & Brussells Sprouts Caesar Salad</a><div id="contains">
-								<img src="assets/gl2.png" height="30px" alt="gluten less"></div></div><br><br>
+								<img src="assets/gl2.png" height="30px" alt="gluten less"></div><br><br>
 								Shredded kale and brussels sprouts with
 								a creamy, house-made caesar dressing,
 								chickpea croutons, capers, lemon and
@@ -637,336 +1256,6 @@
 								</td>
 							</tr>
 						</table>
-						</div>
-						<!--End of Tab One-->
-						
-						<!--Tab Two-->
-						<div id="Wraps" class="tabs" style="display:none">
-						  <table id="group">
-						  <th>* Wraps & Sandwiches *</th>
-							<tr>
-								<td id="key">
-								<img src="assets/gl2.png" height="50px" alt="gluten less">gluten-less&nbsp;&nbsp;&nbsp;&nbsp;
-								<img src="assets/sf2.png" height="50px" alt="soy free">soy free&nbsp;&nbsp;&nbsp;&nbsp;
-								<img src="assets/nf2.png" height="50px" alt="nut free">nut free
-								</td>
-							</tr>
-							<tr>
-								<td>
-								<img class="foodimg" src="assets/falafel.jpg" alt="Sweet Potato Falafel" height="150px" width="220px">
-								<div class="title">
-								<!-- Trigger/Open The Modal -->
-								<a href="#modalTen" class="title" id="Title" data-modal="modalTen">Sweet Potato Falafel</a>
-								</div>
-								Our version of the mediterranean sandwich.
-								house-made crispy sweet potato fritters,
-								cucumber, red onion, fresh greens and
-								tzaziki sauce in a warm pita
-								<br><br><div class="price">$6.95</div>
-								
-								<!--Beginning of Modal Ten -->
-								<div id="modalTen" class="modal">
-								  <div class="modal-content">
-									  <a class="close">&times;</a>
-									  <h3>Customize Your Order</h3>
-										<div id="modaltitle">
-										Sweet Potato Falafel<br><br>
-										</div><div id="modal-price">$6.95</div><br>
-										<img src="assets/falafel.jpg" alt="Sweet Potato Falafel" height="250px">
-										<br><br>
-										<p>
-										Our version of the mediterranean sandwich.
-										house-made crispy sweet potato fritters,
-										cucumber, red onion, fresh greens and
-										tzaziki sauce in a warm pita 
-										</p>
-										<div class="options">
-										<br><br>
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Cucumbers
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Red Onion
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Greens
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tzaziki Sauce
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<br><br><br>
-										<h4>Choose a Side Item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
-									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
-									<br><br><br>
-									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
-									<button class="addcancelbtn">Add to Cart</button>
-									<button class="addcancelbtn" id="cancel">Cancel</button>
-									</div>	
-									</div> 
-									<!--End of Modal Ten-->
-									  <br>
-									</div>
-								</div>	
-								</td>
-							</tr>
-							<tr>
-								<td>
-								<img class="foodimg" src="assets/food6.jpg" alt="Bauffalo Caesar Wrap" height="150px" width="200px">
-								<!-- Trigger/Open The Modal -->
-								<a href="#modalEleven" class="title" data-modal="modalEleven" id="Title">Buffalo Caesar Wrap</a><br>
-								House-made crispy buffalo cauliflower
-								bites on a whole wheat tortilla with
-								shredded kale and brussels sprouts with
-								a creamy, house-made caesar dressing
-								and chickpea croutons
-								<br><br><div class="price">$8.95</div>
-								
-								<!-- Beginning of Modal Eleven-->
-								<div id="modalEleven" class="modal">
-								  <div class="modal-content">
-									  <span class="close">&times;</span>
-									  <h3>Customize Your Order</h3>
-										<div id="modaltitle">
-										Buffalo Caesar Wrap
-										</div><div id="modal-price">$8.95</div><br>
-										<img src="assets/food6.jpg" alt="Buffalo Caesar Wrap" height="250px">
-										<br><br>
-										<p>
-										House-made crispy buffalo cauliflower
-										bites on a whole wheat tortilla with
-										shredded kale and brussels sprouts with
-										a creamy, house-made caesar dressing
-										and chickpea croutons
-										</p>
-										<div class="options">
-										<h4>Choose a Side</h4>
-										<div class="checkboxes">
-											<label class="container">House-made<br> 
-											Caesar Dressing
-											<input type="checkbox" checked="checked" checked>
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<br><br><br>
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Shredded Kale
-											<input type="checkbox" checked="checked" checked>
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Brussels Sprouts 
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Chickpea <br>Croutons
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-										</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
-									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
-									<br><br>
-									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$8.95</span></div><br><br><br>
-									<button class="addcancelbtn">Add to Cart</button>
-									<button class="addcancelbtn" id="cancel">Cancel</button>
-									</div>	
-									</div> 
-									<!--End of Modal Eleven-->
-									<br>
-								</td>
-							</tr>
-							<tr>
-								<td>
-								<img class="foodimg" src="assets/food18.jpg" alt="" height="150px" width="230px">
-								<!-- Trigger/Open The Modal -->
-								<a href="#modalTwelve" class="title" data-modal="modalTwelve" id="Title">Buffalo Cauliflower Wrap</a>
-								<br><br>
-								House-made crispy cauliflower bites on a
-								whole wheat tortilla with greens, shredded
-								carrot, red onion, cucumber, smothered in
-								spicy buffalo sauce and creamy ranch
-								<br><br><div class="price">$7.95</div>
-								<!-- Beginning of Modal Twelve-->
-								<div id="modalTwelve" class="modal">
-								  <div class="modal-content">
-									  <span class="close">&times;</span>
-									  <h3>Customize Your Order</h3>
-										<div id="modaltitle">
-										Buffalo Cauliflower Bites
-										</div><div id="modal-price">$7.95</div><br>
-										<img src="assets/food18.jpg" alt="Buffalo Cauliflower Wrap" height="250px">
-										<br><br>
-										<p>
-										house-made crispy cauliflower bites on a
-										whole wheat tortilla with greens, shredded
-										carrot, red onion, cucumber, smothered in
-										spicy buffalo sauce and creamy ranch
-
-										</p>
-										<div class="options">
-										<br><br>
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Cucumbers
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Red Onion
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Greens
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Spicy<br>Buffalo Sauce
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Creamy Ranch
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<br><br><br>
-										<h4>Choose a Side Item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
-									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
-									<br><br>
-									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$3.95</span></div><br><br><br>
-									<button class="addcancelbtn">Add to Cart</button>
-									<button class="addcancelbtn" id="cancel">Cancel</button>
-									</div>	
-									</div> 
-									<!--End of Modal Twelve-->
-								</td>
-							</tr>
-							<tr>
-								<td>
-								<img class="foodimg" src="assets/burger.jpg" alt="Sweet Potato Black Bean Burger" height="150px" width="230px">
-								<!-- Trigger/Open The Modal -->
-								<a href="#modalThirteen" class="title" data-modal="modalThirteen" id="Title">Sweet Potato Black Bean Burger</a>
-								<br><br>
-								House-made sweet potato black bean
-								burger on a pretzel bun with fresh greens,
-								red onion and chipotle sauce
-								<br><br><div class="price">$6.95</div>
-								<!-- Beginning of Modal Thirteen-->
-								<div id="modalThirteen" class="modal">
-								  <div class="modal-content">
-									  <span class="close">&times;</span>
-									  <h3>Customize Your Order</h3>
-										<div id="modaltitle">
-										Sweet Potato Black Bean Burger
-										</div><div id="modal-price">$6.95</div><br>
-										<img src="assets/burger.jpg" alt="Sweet Potato Black Bean Burger" height="250px">
-										<br><br>
-										<p>
-										House-made sweet potato black bean
-										burger on a pretzel bun with fresh greens,
-										red onion and chipotle sauce
-										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Fresh Greens
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Red Onion
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Chipotle Sauce
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
-									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
-									<br><br>
-									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
-									<button class="addcancelbtn">Add to Cart</button>
-									<button class="addcancelbtn" id="cancel">Cancel</button>
-									</div>	
-									</div> 
-									<!--End of Modal Thirteen-->
-								</td>
-							</tr>
-						</table>
-						</div>
 						<!--End of Tab Two-->
 
 						<!--Tab Three-->
@@ -1017,9 +1306,12 @@
 							  
 							}
 							</script>
-					
-				</div>
-				</div><br><br>
+					</div>
+					</div>
+					</div>
+					</div>
+					</div>
+				<br><br>
 				<div class=footerArea>
 					   <div id= social>
 						  <a href="https://www.facebook.com/pg/Lulus-Local-Eatery-132285260224330/photos/?ref=page_internal" target="_blank"><img src="assets/twitter2.png" alt="Twitter"></a>
@@ -1045,7 +1337,7 @@
 					  <div id = totop>
 						<a href="#logo"><img src="assets/totop.png" alt="to top" height="100px"></a>
                     </div>
-                    </div>
+                </div>
       </div>
   </body>
 </html>
