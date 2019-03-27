@@ -1,13 +1,31 @@
 /*Jasmine Gaines wrote this page, Nathan Lee edited*/
-
+ .bodyGrid {
+   grid-area:bodyArea;
+   margin:auto;
+   width:90%;
+   display:grid;
+   padding: 20px;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   grid-template-rows:auto;
+   grid-template-columns:3fr;
+   grid-template-areas:
+   'maincontent'
+   'orderGrid';
+ }
 .orderGrid {
-	grid-area: bodyArea;
-	grid-template-rows: 4fr;
+	grid-area: orderGrid;
+	display:grid;
+	margin:auto;
+	grid-template-rows: auto;;
 	grid-template-columns: 3fr;
 	grid-template-areas:
-	'food food food';	
+	'food';	
 }	
-
+  .maincontent{
+   grid-area:maincontent;
+   margin:auto;
+   text-align: center;
+ }
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -47,7 +65,7 @@ table#group th { font-size: 40px;
 				 padding: 10px;
 				 font-family: Gabriel; 
 				 color: #134e5e;
-				 padding-bottom: 120px;
+				 padding-bottom: 150px;
 				 padding-top: 50px;
 
 }
@@ -73,11 +91,15 @@ table#group th { font-size: 40px;
  #contains img { padding-right: 5px;}
  
 
-td#key { text-align: center;
+table#key td { text-align: center;
 		  padding: 5px 10px 5px 5px;
 		  color: #134e5e;
-		  font-size: 20px;
  } 
+table#key { background-color: white;
+			border: 3px dashed #134e5e;; 
+			text-align: center;
+			padding-left: 10px;
+ }
  /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -243,21 +265,14 @@ td#key { text-align: center;
 }
 #qty { float: right; 
 		font-weight: bold;
-		margin-top: 50px;
-		margin-bottom: 50px;
 }
 #total { font-weight: bold; 
 		 float: right;
 		 font-size: 20px;
-		 margin-top: 100px;
-		 margin-bottom: 100px;
+		 margin-right: 10px;
 }
-#totalAmt { color: red; 
-			float: right;
-}
+#totalAmt { color: red; }
 #options h4{ font-weight: bold; }
-
-#options { margin-bottom: 50px; }
 
 .addcancelbtn {
   padding: 7px 14px;

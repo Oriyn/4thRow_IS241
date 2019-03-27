@@ -2,8 +2,8 @@
 .grid {
    grid-area:bodyArea;
    justify-items:center;
-   background-color: #c4dbad;
-   background-image: url("assets/brushed-alum-dark.png");
+   background-color: white;
+   background-image: url("../assets/diagonal-striped-brick.png");
    margin:auto;
    width:100%;
    display:grid;
@@ -13,6 +13,12 @@
    'item2 item1 item3'
    'item5 item1 item4'
    'item5 item1 item4'    
+ }
+ a {
+	 color:green;
+ }
+ a:visited {
+	 color:darkgreen;
  }
  .item1{
    grid-area:item1;

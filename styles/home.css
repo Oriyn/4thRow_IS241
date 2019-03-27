@@ -1,0 +1,28 @@
+ .bodyGrid {
+   grid-area:bodyArea;
+   margin:auto;
+   width:90%;
+   display:grid;
+   padding: 20px;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   grid-template-rows:4fr 3fr;
+   grid-template-columns:3fr;
+   grid-template-areas:
+   'maincontent maincontent maincontent'
+   'gencontent	gencontent	gencontent';
+ }
+  .maincontent{
+   grid-area:maincontent;
+   text-align: center;
+ }
+ .gencontent{
+	grid-area: gencontent;
+	background-color: #000000;
+	margin: auto;
+	background-image: url('../assets/food.png');
+	margin-left: 20px;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	'menus specials discounts';
+ }

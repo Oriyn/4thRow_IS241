@@ -5,14 +5,14 @@
    width:90%;
    display:grid;
    padding: 20px;
-   grid-template-rows:1fr;
+   grid-template-rows:auto;
    grid-template-columns:1fr;
    grid-template-areas:
    'contactcontent'
    'details'
  }
  .contactcontent{
-	grid-area:maincontent;
+	grid-area:contactcontent;
  }
  .bannerArea {
 	grid-area:bannerArea;

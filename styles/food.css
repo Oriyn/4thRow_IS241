@@ -1,17 +1,57 @@
 /*written by Gabe*/
+.bodyGrid {
+	grid-area:bodyArea;
+	display:grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto;
+	grid-template-areas:
+	'maincontent maincontent'
+	'gridContainer gridContainer'
+	'gridContainer gridContainer'
+	'aside aside'
+}
 .grid-container {
+  grid-area: gridContainer;
   display: grid;
   grid-template-columns: 25% 25%;
   padding: 5px;
+  margin:auto;
   justify-items: center;
   justify-content: space-evenly;
   grid-column-gap: 50px;
   grid-row-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  'item item2'
+  'item3 item4'
 }
 p {
     text-align:center;
 }
-.grid-item {  
+.maincontent {
+	grid-area:maincontent;
+}
+.asidebar {
+	grid-area:aside;
+}
+.grid-item {
+  grid-area: item;
+  padding: 15px;
+  font-size: 15px;
+}
+.grid-item2 {
+  grid-area: item2;
+  padding: 15px;
+  font-size: 15px;
+}
+.grid-item3 {
+  grid-area: item3;
+  padding: 15px;
+  font-size: 15px;
+}
+.grid-item4 {
+  grid-area: item4;
   padding: 15px;
   font-size: 15px;
 }

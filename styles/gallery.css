@@ -1,8 +1,7 @@
 /*written by Nathan*/
 @import url('https://fonts.googleapis.com/css?family=Arvo');
 
-body,
-html {
+body{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,17 +10,13 @@ html {
   height: 100%;
   background: #f5f4f4;
   font-size: 13px;
-  font-family: 'Arvo', monospace;
+  font-family: Marker Felt, fantasy;
   
   @supports(display: grid) {
     display: block;
   }
 }
 
-h1 {
-  font-size: 2rem;
-  margin: 0 0 1.5em;
-}
 
 .grid {
   grid-area:bodyArea;
