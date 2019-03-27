@@ -1,0 +1,108 @@
+/*written by Nathan*/
+.bodyGrid {
+	grid-area:bodyArea;
+	display:grid;
+	margin:auto;
+	grid-template-rows: 200px 200px 200px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap:.1cm;
+	justify-content:space-evenly;
+	align-content:space-evenly;
+	grid-template-areas:
+	'content item item3 item4'
+	'item5 item item3 item7'
+	'item5 item6 item3 item7'
+}
+.content {
+	grid-area:content;
+	text-align:center;
+	margin:auto;
+  padding-left:50px;
+}
+.item {
+  grid-area: item;
+  background-image:url('../assets/pingpong1.jpg');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  padding: 15px;
+  font-size: 15px;
+}
+.item2 {
+  grid-area: item2;
+  background-image:url('../assets/pingpong2.jpg');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  padding: 15px;
+  font-size: 15px;
+}
+.item3 {
+  grid-area: item3;
+  background-image:url('../assets/pingpong3.jpg');
+  background-repeat:no-repeat;
+  background-size:contain;  
+  background-position:center;
+  padding: 15px;
+  font-size: 15px;
+}
+.item4 {
+  grid-area: item4;
+  background-image:url('../assets/pingpong4.jpg');
+  background-repeat:no-repeat;
+  background-size:contain;  
+  background-position:center;
+  padding: 15px;
+  font-size: 15px;
+}
+.item5 {
+  grid-area: item5;
+  background-image:url('../assets/pingpong7.jpg');
+  background-repeat:no-repeat;
+  background-size:contain;  
+  background-position:center;
+  padding: 15px;
+  font-size: 15px;
+}
+.item6 {
+  grid-area: item6;
+  background-image:url('../assets/pingpong6.jpg');
+  background-repeat:no-repeat;
+  background-size:contain;  
+  background-position:center;
+  padding: 15px;
+  font-size: 15px;
+}
+.item7 {
+  grid-area: item7;
+  background-image:url('../assets/pingpong5.jpg');
+  background-repeat:no-repeat;
+  background-size:contain;  
+  background-position:center;
+  padding: 15px;
+  font-size: 15px;
+}
+a {
+    color: green;
+} 
+a:visited {
+    color:darkgreen;
+}
+
+.bannerArea {
+	grid-area:bannerArea;
+	background-image: url('../assets/lulusnew.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+ }
+  h3{
+      text-align: center;
+      color: black;
+  }
+  h3:active{
+      color:blue;
+  }
+  h3:hover { text-decoration: none; color: blue; }
+  h3:focus { text-decoration: none; color: blue; }
+  h3:hover, h3:active { text-decoration: none; color: blue; }
