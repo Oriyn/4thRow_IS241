@@ -1,0 +1,23 @@
+{
+  "name": "restaurantapi",
+  "version": "0.0.1",
+  "description": "Serve the servings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leecommamichael/RestaurantAPI.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leecommamichael/RestaurantAPI/issues"
+  },
+  "homepage": "https://github.com/leecommamichael/RestaurantAPI#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
