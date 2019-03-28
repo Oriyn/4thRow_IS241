@@ -7,7 +7,8 @@
     <title>Lulu's Local Eatery</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <link rel="stylesheet" type="text/css" href="styles/order.css">
+	<link rel="stylesheet" type="text/css" href="styles/order.css">
+	<script src="scripts/Shopping_Cart.js"></script>
 
   </head>
   <body>
@@ -102,7 +103,7 @@
 									  <h3>Customize Your Order</h3>
 										<div id="modaltitle">
 										Buffalo Cauliflower Bites<br><br>
-										</div><div id="modal-price">$5.95</div><br>
+										</div><div id="modal-price1">$5.95</div><br>
 										<img src="assets/food1.jpg" alt="Buffalo Cauliflower Bites" height="250px">
 										<br><br>
 										<p>
@@ -112,7 +113,7 @@
 										<h4>Choose a side item</h4>
 										<div class="checkboxes">
 											<label class="container">Ranch
-											<input type="checkbox" checked="checked">
+											<input type="checkbox" name="extras1" checked="checked">
 											<span class="checkmark"></span>
 											</label>
 											</div>
@@ -120,11 +121,11 @@
 										<h4>Choose or Remove a Topping</h4>
 										<div class="checkboxes">
 											<label class="container">Buffalo Sauce
-											<input type="checkbox" checked="checked">
+											<input type="checkbox" name="extras1" checked="checked">
 											<span class="checkmark"></span>
 											</label>
 											<label class="container">Buffalo Sauce on Side
-											<input type="checkbox" checked="checked">
+											<input type="checkbox" name="extras1" checked="checked">
 											<span class="checkmark"></span>
 											</label>
 										</div>
@@ -134,7 +135,7 @@
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
 									<br><br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$5.95</span></div><br><br><br>
-									<button class="addcancelbtn">Add to Cart</button>
+									<button class="addcancelbtn" onclick="addToCart(1)">Add to Cart</button>
 									<button class="addcancelbtn" id="cancel">Cancel</button>
 									</div>	
 									</div> 
@@ -176,19 +177,19 @@
 										<h4>Choose or Remove a Topping</h4>
 										<div class="checkboxes">
 											<label class="container">Cranberries
-											<input type="checkbox" checked="checked" checked>
+											<input type="checkbox" name="extras2" checked="checked" checked>
 											<span class="checkmark"></span>
 											</label>
 											<label class="container">Shredded Carrots
-											<input type="checkbox" checked="checked">
+											<input type="checkbox" name="extras2" checked="checked">
 											<span class="checkmark"></span>
 											</label>
 											<label class="container">Sunflower Seeds
-											<input type="checkbox" checked="checked">
+											<input type="checkbox" name="extras2" checked="checked">
 											<span class="checkmark"></span>
 											</label>
 											<label class="container">Maple Mustard Vinagerette
-											<input type="checkbox" checked="checked">
+											<input type="checkbox" name="extras2" checked="checked">
 											<span class="checkmark"></span>
 											</label>
 										</div>
@@ -198,7 +199,7 @@
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
-									<button class="addcancelbtn">Add to Cart</button>
+									<button class="addcancelbtn" onclick="addToCart(2)">Add to Cart</button>
 									<button class="addcancelbtn" id="cancel">Cancel</button>
 									</div>	
 									</div> 
