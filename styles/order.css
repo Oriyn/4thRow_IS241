@@ -91,15 +91,10 @@ table#group th { font-size: 40px;
  #contains img { padding-right: 5px;}
  
 
-table#key td { text-align: center;
-		  padding: 5px 10px 5px 5px;
-		  color: #134e5e;
+#key { text-align: center;
+	   padding: 5px 10px 5px 5px;
  } 
-table#key { background-color: white;
-			border: 3px dashed #134e5e;; 
-			text-align: center;
-			padding-left: 10px;
- }
+
  /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
