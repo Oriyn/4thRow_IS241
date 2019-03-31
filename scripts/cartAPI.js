@@ -75,6 +75,124 @@ function cartAPI(itemNo){
         order +=";";
         return order;
         break;
+
+        case 5:
+        var qty = qtybox[4].value;
+        price = 5.95 * qty;
+        order = "Lulu's Chili, Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        if(ifChecked[0].checked != true){
+            order += ", No Butternut squash cheese";
+        }
+        if(ifChecked[1].checked != true){
+          order += ", No sour cream";
+        }
+        if(ifChecked[2].checked != true){
+            order += ", No green onion";
+        }
+        if(ifChecked[3].checked != true){
+            order += ", No cilantro";
+        }
+        order +=";";
+        return order;
+        break;
+
+        case 6:
+        var qty = qtybox[5].value;
+        price = 5.95 * qty;
+        order = "Volcano Tots, Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        if(ifChecked[0].checked != true){
+            order += ", No Butternut squash cheese";
+        }
+        if(ifChecked[1].checked != true){
+          order += ", No sour cream";
+        }
+        if(ifChecked[2].checked != true){
+            order += ", No green onion";
+        }
+        if(ifChecked[3].checked != true){
+            order += ", No cilantro";
+        }
+        order +=";";
+        return order;
+        break;
+
+        case 7:
+        var qty = qtybox[6].value;
+        price = 8.95 * qty;
+        order = "Loaded Nachos, Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        if(ifChecked[0].checked != true){
+            order += ", No Butternut squash cheese";
+        }
+        if(ifChecked[1].checked != true){
+          order += ", No Jackfruit carnitas";
+        }
+        if(ifChecked[2].checked != true){
+            order += ", No salsa";
+        }
+        if(ifChecked[3].checked != true){
+            order += ", No sour cream";
+        }
+        if(ifChecked[4].checked != true){
+          order += ", No green onion";
+        }
+        if(ifChecked[5].checked != true){
+            order += ", No pickled jalapeno";
+        }
+        if(ifChecked[6].checked != true){
+            order += ", No cilantro";
+        }
+        order +=";";
+        return order;
+        break;
+
+        case 8:
+        var qty = qtybox[7].value;
+        price = 6.95 * qty;
+        order = "Loaded Nacho Tots, Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        if(ifChecked[0].checked != true){
+            order += ", No Butternut squash cheese";
+        }
+        if(ifChecked[1].checked != true){
+          order += ", No Jackfruit carnitas";
+        }
+        if(ifChecked[2].checked != true){
+            order += ", No salsa";
+        }
+        if(ifChecked[3].checked != true){
+            order += ", No sour cream";
+        }
+        if(ifChecked[4].checked != true){
+          order += ", No green onion";
+        }
+        if(ifChecked[5].checked != true){
+            order += ", No pickled jalapeno";
+        }
+        if(ifChecked[6].checked != true){
+            order += ", No cilantro";
+        }
+        order +=";";
+        return order;
+        break;
+
+        case 9:
+        var qty = qtybox[8].value;
+        price = 6.95 * qty;
+        order = "Kale & Brussells Sprouts Caesar Salad , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        if(ifChecked[0].checked != true){
+            order += ", No chickpea crutons";
+        }
+        if(ifChecked[1].checked != true){
+          order += ", No capers";
+        }
+        if(ifChecked[2].checked != true){
+            order += ", No lemon";
+        }
+        if(ifChecked[3].checked != true){
+            order += ", No walnut parmesan";
+        }
+        order +=";";
+        return order;
+        break;
   
         default: alert("fuck you");
 }
