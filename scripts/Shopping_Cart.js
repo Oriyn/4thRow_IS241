@@ -1,3 +1,8 @@
+window.onload = function (){
+    document.getElementById("cartNum").innerHTML = localStorage.getItem("NumOfItems") ;
+};
+
+
 function addToCart (itemNo){   
  if (document.getElementById("cartNum").innerHTML === "0"){
     var itemsInCart = [];
