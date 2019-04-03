@@ -1,5 +1,10 @@
 window.onload = function (){
-    document.getElementById("cartNum").innerHTML = localStorage.getItem("NumOfItems") ;
+    if(localStorage.getItem("NumOfItems") === null){
+        document.getElementById("cartNum").innerHTML = "0";
+    }
+    else{
+    document.getElementById("cartNum").innerHTML = localStorage.getItem("NumOfItems");
+    }
 };
 
 
@@ -7,7 +12,6 @@ function addToCart (itemNo){
  if (document.getElementById("cartNum").innerHTML === "0"){
     var itemsInCart = [];
     localStorage.setItem("NumOfItems", 0);
-    alert("hit");
  }
  else{
      var itemsInCart = JSON.parse(localStorage.getItem("CartItems"));

@@ -193,6 +193,81 @@ function cartAPI(itemNo){
         order +=";";
         return order;
         break;
+
+        case 10:
+        var qty = qtybox[9].value;
+        price = 6.95 * qty;
+        order = "Sweet potato falafel , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        if(ifChecked[0].checked != true){
+            order += ", No cucumbers";
+        }
+        if(ifChecked[1].checked != true){
+          order += ", No red onion";
+        }
+        if(ifChecked[2].checked != true){
+            order += ", No fresh greens";
+        }
+        if(ifChecked[3].checked != true){
+            order += ", No tzaziki sauce";
+        }
+        if(ifChecked[4].checked != true){
+            order += ", Side item: Billy goat chips";
+            price += 1.00;
+        }
+        if(ifChecked[5].checked != true){
+              order += ", Side item: Tater tots";
+              price += 2.00;
+        }
+        if(ifChecked[6].checked != true){
+              order += ", Side item: kale salad";
+              price += 3.00;
+        }
+        order +=";";
+        return order;
+        break;
+
+        case 11:
+        var qty = qtybox[10].value;
+        price = 8.95 * qty;
+        order = "Buffalo caesar wrap , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        if(ifChecked[0].checked != true){
+            order += ", No House-made caesar dressing ";
+        }
+        if(ifChecked[1].checked != true){
+          order += ", No shredded kale";
+        }
+        if(ifChecked[2].checked != true){
+            order += ", No brussels sprouts";
+        }
+        if(ifChecked[3].checked != true){
+            order += ", No chickpea croutons";
+        }
+        order +=";";
+        return order;
+        break;
+
+        case 12:
+        var qty = qtybox[11].value;
+        price = 7.95 * qty;
+        order = "Buffalo colliflower wrap , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        if(ifChecked[0].checked != true){
+            order += ", No cucumbers";
+        }
+        if(ifChecked[1].checked != true){
+          order += ", No red onion";
+        }
+        if(ifChecked[2].checked != true){
+            order += ", No fresh greens";
+        }
+        if(ifChecked[3].checked != true){
+            order += ", No spicy buffalo sauce";
+        }
+        if(ifChecked[4].checked != true){
+            order += ", No creamy ranch";
+        }
+        order +=";";
+        return order;
+        break;
   
         default: alert("fuck you");
 }
