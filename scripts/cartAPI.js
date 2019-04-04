@@ -269,6 +269,6 @@ function cartAPI(itemNo){
         return order;
         break;
   
-        default: alert("fuck you");
+        default: return -1;
 }
 };

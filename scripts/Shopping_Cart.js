@@ -16,8 +16,7 @@ function addToCart (itemNo){
  else{
      var itemsInCart = JSON.parse(localStorage.getItem("CartItems"));
  }
-var numOfItems = localStorage.getItem("NumOfItems");
-alert(numOfItems);   
+var numOfItems = localStorage.getItem("NumOfItems");  
 var APIcall = cartAPI(itemNo);
 itemsInCart[numOfItems] = APIcall;
 localStorage.setItem("CartItems", JSON.stringify(itemsInCart));
