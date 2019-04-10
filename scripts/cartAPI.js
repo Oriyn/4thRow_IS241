@@ -8,7 +8,7 @@ function cartAPI(itemNo){
         case 1:
         var qty = qtybox[0].value;
         price = 5.95 * qty;
-        order = "Buffalo colliflower bites, Price: $"+ price.toFixed(2) +", Quantity: "+ qty;
+        order = "Buffalo cauliflower bites, Price: $"+ price.toFixed(2) +", Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No ranch";
         }
