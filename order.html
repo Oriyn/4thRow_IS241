@@ -606,7 +606,7 @@
 										<h4>Choose or Remove a Topping</h4>
 										<div class="checkboxes">
 											<label class="container">Cucumber
-											<input type="checkbox" name="extras25checked="checked">
+											<input type="checkbox" name="extras25" checked="checked">
 											<span class="checkmark"></span>
 											</label>
 											<br><br><br><br><br>
@@ -761,7 +761,7 @@
 									<!--End of Modal Nine-->
 								</td>
 							</tr>
-								<!--Workin On-->		<tr>
+							<tr>
 								<td>
 								<img class="foodimg" src="assets/thaikalesalad.jpg" alt="Thai Crunch Salad" height="150px" width="230px">
 								<!-- Trigger/Open The Modal -->
@@ -852,7 +852,7 @@
 									<button class="addcancelbtn" id="cancel">Cancel</button>
 									</div>	
 									</div> 
-									<!--End of Modal TwentyNine-->
+									<!--End of Modal Thirty-->
 								</td>
 							</tr>
 						</table>
@@ -1279,7 +1279,7 @@
 										<div class="options">
 										<h4>Choose or Remove a Topping</h4>
 										<div class="checkboxes">
-											<label class="container">Pappy's Original BBQ Sauce
+											<label class="container">Pappy's Original<br>BBQ Sauce
 											<input type="checkbox" name="extras15" checked="checked">
 											<span class="checkmark"></span>
 											</label>
@@ -1810,10 +1810,6 @@
 											<input type="checkbox" name="extras21"checked="checked">
 											<span class="checkmark"></span>
 											</label>
-											<label class="container">Black Beans
-											<input type="checkbox" name="extras21"checked="checked">
-											<span class="checkmark"></span>
-											</label>
 											<label class="container">Shredded Kale
 											<input type="checkbox" name="extras21" checked="checked">
 											<span class="checkmark"></span>
@@ -1891,7 +1887,7 @@
 											<input type="checkbox" name="extras22" checked="checked">
 											<span class="checkmark"></span>
 											</label>
-											<label class="container">Pappy’s<br>Original BBQ Sauce
+											<label class="container">Pappy’s Original<br>BBQ Sauce
 											<input type="checkbox" name="extras22" checked="checked">
 											<span class="checkmark"></span>
 											</label>
@@ -2544,7 +2540,7 @@
 										<img src="assets/sf2.png" height="30px" alt="soy free"><img src="assets/nf2.png" height="30px" alt="nut free">
 										</div>
 										</div><div id="modal-price">$3.95</div><br>
-										<img src="assets/minis.jpg" alt="BBQ Slider (1)" height="250px">
+										<img src="assets/minis.jpg" alt="BBQ Slider (1)" height="250px" width="150px">
 										<br><br>
 										<p>
 										One bbq slider
@@ -2683,6 +2679,14 @@
 
 							var closeTitles = [...document.querySelectorAll(".close")];
 							closeTitles.forEach(function(title){
+							  title.onclick = function() {
+							var modal = title.closest('.modal');
+								modal.style.display = "none";
+							  }
+							});
+							
+							var cancel = [...document.querySelectorAll("#cancel")];
+							cancel.forEach(function(title){
 							  title.onclick = function() {
 							var modal = title.closest('.modal');
 								modal.style.display = "none";
