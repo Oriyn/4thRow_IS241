@@ -8,3 +8,23 @@ span #DisplayCart{
 };
 a {color:black;}
 a:visited {color:black;}
+.bodyGrid {
+    grid-area:bodyArea;
+    margin:auto;
+    width:90%;
+    display:grid;
+    padding: 20px;
+    grid-template-rows:1fr;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    'cart details'
+  }
+
+.cart {
+    grid-area:cart;
+    margin:auto;
+}
+.details {
+    grid-area:details;
+    margin:auto;
+}
