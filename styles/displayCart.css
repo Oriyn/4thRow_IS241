@@ -6,3 +6,5 @@
 span #DisplayCart{
     text-align: center;
 };
+a {color:black;}
+a:visited {color:black;}

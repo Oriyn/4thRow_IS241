@@ -25,3 +25,9 @@
 	grid-template-areas:
 	'menus specials discounts';
  }
+ a:visited {
+  color: white;
+}
+a {
+  color:white;
+}
