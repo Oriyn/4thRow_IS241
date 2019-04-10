@@ -1,23 +1,33 @@
 {
-  "name": "restaurantapi",
-  "version": "0.0.1",
-  "description": "Serve the servings.",
-  "main": "index.js",
+  "name": "braintree_express_example",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "start": "node ./bin/www",
+    "test": "npm run lint && mocha"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leecommamichael/RestaurantAPI.git"
+  "devDependencies": {
+    "chai": "~3.4.1",
+    "eslint": "2.7.0",
+    "eslint-config-braintree": "^1.0.1",
+    "mocha": "^5.2.0",
+    "supertest": "^3.4.1"
   },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/leecommamichael/RestaurantAPI/issues"
-  },
-  "homepage": "https://github.com/leecommamichael/RestaurantAPI#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "braintree": "^2.9.0",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.4.0",
+    "debug": "^4.1.1",
+    "dotenv": "~1.2.0",
     "express": "^4.16.4",
-    "mysql": "^2.16.0"
+    "express-session": "^1.15.6",
+    "pug": "^2.0.3",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "engines": {
+    "node": ">=10"
   }
 }
