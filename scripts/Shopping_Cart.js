@@ -22,7 +22,6 @@ itemsInCart[numOfItems] = APIcall;
 localStorage.setItem("CartItems", JSON.stringify(itemsInCart));
 numOfItems ++;
 localStorage.setItem("NumOfItems", numOfItems);
-alert(APIcall);  
 addItem();
 var storedNames = JSON.parse(localStorage.getItem("CartItems"));
 console.log(storedNames);
@@ -36,4 +35,5 @@ function clearCart(){
   localStorage.clear();
   document.getElementById("cartNum").innerHTML = "0";
   alert("cart cleared");
+  window.location.reload();
 };

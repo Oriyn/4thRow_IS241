@@ -13,6 +13,5 @@ window.onload = function (){
     }
     console.log(displayCartItems);
     document.getElementById("DisplayCart").innerHTML = displayCartItems ;
-
     }
 };
