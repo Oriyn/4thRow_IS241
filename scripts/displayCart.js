@@ -7,11 +7,7 @@ window.onload = function (){
     document.getElementById("cartNum").innerHTML = localStorage.getItem("NumOfItems");
     var items = JSON.parse(localStorage.getItem("CartItems"));
     console.log(items);
-    var displayCartItems = "";
-    for(i=0; i < localStorage.getItem("NumOfItems"); i++){
-      displayCartItems += (i+1) + ". " + items[i] + "<br>";
-    }
-    console.log(displayCartItems);
-    document.getElementById("DisplayCart").innerHTML = displayCartItems ;
+    const displayCartItems = items.reduce((acc,value, index) => acc += (index + 1) + ". " + value + "<br>", "")
+    document.getElementById("DisplayCart").innerHTML = displayCartItems
     }
 };
