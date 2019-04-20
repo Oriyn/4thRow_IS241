@@ -254,6 +254,29 @@ table#group th { font-size: 40px;
 			  margin-bottom: 150px;
 			  
  }	
+  table#optable { 
+		 border: 0px;		
+		 padding: 10px;
+         margin: 0px;
+		 width: 100%;
+		 margin-bottom: 50px;
+}
+ table#optable td{
+	 border-bottom: 0px solid;
+	 padding: 10px;
+ }
+ table#optable th { 
+		width: 100%;
+		font-size: 20px;
+		font-family: Gabriel; 
+		background-color: #c4dbad;
+		color: black;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+}
 #modal-price { text-align: center;
 			   font-weight: bold;
 			   font-family: Arial Bold, Helvetica, sans-serif;

@@ -64,13 +64,13 @@ function cartAPI(itemNo){
             order += ", No walnut parmesean";
         }
         if(ifChecked[1].checked != true){
-          order += ", No chili buffalo";
+          order += ", No chili buffalo flavor";
         }
         if(ifChecked[2].checked != true){
-            order += ", No peso";
+            order += ", No peso flavor";
         }
         if(ifChecked[3].checked != true){
-            order += ", No nacho mac";
+            order += ", No nacho mac flavor";
         }
         order +=";";
         return order;
@@ -320,7 +320,7 @@ function cartAPI(itemNo){
         case 11:
         var qty = qtybox[13].value;
         price = 8.95 * qty;
-        order = "Buffalo caesar wrap , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Buffalo Caesar Wrap , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No House-made caesar dressing ";
         }
@@ -332,6 +332,18 @@ function cartAPI(itemNo){
         }
         if(ifChecked[3].checked != true){
             order += ", No chickpea croutons";
+        }
+		if(ifChecked[4].checked != true){
+            order += ", No side item: Billy goat chips";
+            price += 1.00;
+        }
+        if(ifChecked[5].checked != true){
+              order += ", No side item: Tater tots";
+              price += 2.00;
+        }
+        if(ifChecked[6].checked != true){
+              order += ", No side item: kale salad";
+              price += 3.00;
         }
         order +=";";
         return order;

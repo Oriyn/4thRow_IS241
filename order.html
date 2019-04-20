@@ -96,29 +96,33 @@
 										<p>
 										Buffalo Cauliflower Bites servered with a ranch dipping sauce 
 										</p>
-										<div class="options">
-										<h4>Choose a Side item</h4>
-										<div class="checkboxes">
-											<label class="container">Ranch
-											<input type="checkbox" name="extras1" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br>
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Buffalo Sauce
-											<input type="checkbox" name="extras1" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container" >Buffalo Sauce on Side
-											<input type="checkbox" name="extras1">
-											<span class="checkmark"></span>
-											</label>
-										</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose a Side Item
+											</th>
+											<tr>
+												<td>
+													<label class="container">Ranch
+													<input type="checkbox" name="extras1" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>	
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Buffalo Sauce
+													<input type="checkbox" name="extras1" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Buffalo Sauce<br> on the Side
+													<input type="checkbox" name="extras1"  checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$5.95</span></div><br><br><br>
@@ -158,29 +162,37 @@
 										<p>
 										Kale Salad with cranberries, shredded carrot, sunflower seeds, and maple mustard vinagerette
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Cranberries
-											<input type="checkbox" name="extras2" checked="checked" checked>
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Shredded Carrots
-											<input type="checkbox" name="extras2" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Sunflower Seeds
-											<input type="checkbox" name="extras2" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Maple Mustard Vinagerette
-											<input type="checkbox" name="extras2" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-										</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Cranberries
+													<input type="checkbox" name="extras2" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Shredded Carrots
+													<input type="checkbox" name="extras2" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Sunflower Seeds
+													<input type="checkbox" name="extras2" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Maple Mustard<br> Vinagerette
+													<input type="checkbox" name="extras2" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
@@ -216,24 +228,26 @@
 										<p>
 										Tots served with cajun seasoning and spicy chipotle dipping sauce 
 										</p>
-										<div class="options">
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Chipotle Dipping Sauce
-											<input type="checkbox" name="extras3" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Cajun Seasoning
-											<input type="checkbox" name="extras3" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-										</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Chipotle Dipping<br>Sauce
+													<input type="checkbox" name="extras3" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Cajun Seasoning
+													<input type="checkbox" name="extras3" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$3.95</span></div><br><br><br>
@@ -268,33 +282,38 @@
 										<p>
 										Organic gluten-less noodles smothered in house-made butternut squash cheese sauce topped with walnut parmesan (make it chili buffalo, pesto, or nacho mac for no extra charge)
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Walnut Parmesan
-											<input type="checkbox" name="extras4" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-										</div>
-										<br><br><br>
-										<h4>Upgrade, at No Extra Charge!</h4>
-										<div class="checkboxes">
-											<label class="container">
-											<input type="checkbox" name="extras4">Chili Buffalo
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">
-											<input type="checkbox" name="extras4">Peso
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">
-											<input type="checkbox" name="extras4">Nacho Mac
-											<span class="checkmark"></span>
-											</label>
-										</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Walnut Parmesan
+													<input type="checkbox" name="extras4" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Upgrade, at No Extra Charge!</th>
+											<tr>
+												<td>
+													<label class="container">
+													<input type="checkbox" name="extras4">Chili Buffalo
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">
+													<input type="checkbox" name="extras4">Peso
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">
+													<input type="checkbox" name="extras4">Nacho Mac
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.49</span></div><br><br><br>
@@ -330,30 +349,37 @@
 										<p>
 										Smoky chipotle chili with qunoa sweet potatoes, onion, red kidney beans, black beans, and tomatoes topped with housemade butternut squash cheese, sour cream, green onion, and cilantro
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Butternut Squash Cheese
-											<input type="checkbox" name="extras5" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Sour Cream
-											<input type="checkbox" name="extras5" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Green Onion
-											<input type="checkbox" name="extras5" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro
-											<input type="checkbox" name="extras5" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-										</div>
-										
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Butternut Squash<br>Cheese
+													<input type="checkbox" name="extras5" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Sour Cream
+													<input type="checkbox" name="extras5" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Green Onion
+													<input type="checkbox" name="extras5" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras5" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$5.95</span></div><br><br><br>
@@ -389,29 +415,37 @@
 										<p>
 										Tater tots smothered in lulu's chili housemade butternut squash cheese sauce, sour cream, and garnish with green onion and cilantro
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Butternut Squash Cheese
-											<input type="checkbox" name="extras6" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Sour Cream
-											<input type="checkbox" name="extras6" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Green Onion
-											<input type="checkbox" name="extras6" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro
-											<input type="checkbox" name="extras6" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-										</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Butternut Squash<br>Cheese
+													<input type="checkbox" name="extras6" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Sour Cream
+													<input type="checkbox" name="extras6" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Green Onion
+													<input type="checkbox" name="extras6" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras6" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$5.95</span></div><br><br><br>
@@ -455,41 +489,57 @@
 										and garnished with green onion, pickled
 										jalapeño and cilantro
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Butternut Squash Cheese
-											<input type="checkbox" name="extras7" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Jackfruit Carnitas
-											<input type="checkbox" name="extras7" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Salsa
-											<input type="checkbox" name="extras7" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Sour Cream
-											<input type="checkbox" name="extras7" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Green Onion
-											<input type="checkbox" name="extras7" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Pickled Jalapeño
-											<input type="checkbox" name="extras7" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro
-											<input type="checkbox" name="extras7" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br><br><br>
-										</div>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Butternut Squash<br>Cheese
+													<input type="checkbox" name="extras7" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Jackfruit<br>Carnitas
+													<input type="checkbox" name="extras7" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Salsa
+													<input type="checkbox" name="extras7" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Sour Cream
+													<input type="checkbox" name="extras7" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Green Onion
+													<input type="checkbox" name="extras7" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Pickled Jalapeño
+													<input type="checkbox" name="extras7" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras7" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$8.95</span></div><br><br><br>
@@ -534,41 +584,57 @@
 										and garnished with green onion, pickled
 										jalapeño and cilantro
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Butternut Squash Cheese
-											<input type="checkbox" name="extras8" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Jackfruit Carnitas
-											<input type="checkbox"  name="extras8" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Salsa
-											<input type="checkbox" name="extras8" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Sour Cream
-											<input type="checkbox" name="extras8" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Green Onion
-											<input type="checkbox" name="extras8" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Pickled Jalapeño
-											<input type="checkbox" name="extras8" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro
-											<input type="checkbox" name="extras8" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br><br><br>
-										</div>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Butternut Squash<br>Cheese
+													<input type="checkbox" name="extras8" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Jackfruit<br>Carnitas
+													<input type="checkbox" name="extras8" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Salsa
+													<input type="checkbox" name="extras8" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Sour Cream
+													<input type="checkbox" name="extras8" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Green Onion
+													<input type="checkbox" name="extras8" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Pickled Jalapeño
+													<input type="checkbox" name="extras8" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras8" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
@@ -603,17 +669,17 @@
 										<p>
 										With grilled pita and cucumber
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Cucumber
-											<input type="checkbox" name="extras25" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br><br><br>
-										</div>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Cucumber
+													<input type="checkbox" name="extras25" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
@@ -648,49 +714,69 @@
 										<p>
 										Lettuce cups stuffed with sushi rice, watermelon poke, cucumber, radish, avocado and scallions topped with spicy mayo and black sesame seeds
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Sushi
-											<input type="checkbox" name="extras26" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Rice
-											<input type="checkbox" name="extras26"checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Watermelon<br>Poké 
-											<input type="checkbox" name="extras26" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cucumber
-											<input type="checkbox" name="extras26" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Radish
-											<input type="checkbox" name="extras26" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Avocado
-											<input type="checkbox" name="extras26" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Scallions
-											<input type="checkbox" name="extras26" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Spicy Mayo
-											<input type="checkbox" name="extras26" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Black<br>Sesame Seeds
-											<input type="checkbox" name="extras26" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br><br><br>
-										</div>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Sushi
+													<input type="checkbox" name="extras26" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Rice
+													<input type="checkbox" name="extras26" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Watermelon<br>Poké
+													<input type="checkbox" name="extras26" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Cucumber
+													<input type="checkbox" name="extras26" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Radish
+													<input type="checkbox" name="extras26" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Avocado
+													<input type="checkbox" name="extras26" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Scallions
+													<input type="checkbox" name="extras26" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Spicy Mayo
+													<input type="checkbox" name="extras26" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Black<br>Sesame Seeds
+													<input type="checkbox" name="extras26" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$9.95</span></div><br><br><br>
@@ -729,29 +815,37 @@
 										<p>
 										Shredded kale and brussels sprouts with a creamy, house-made caesar dressing, chickpea croutons, capers, lemon and walnut parmesan 
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Chickpea Croutons
-											<input type="checkbox" name="extras9" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Capers
-											<input type="checkbox" name="extras9" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Lemon
-											<input type="checkbox" name="extras9" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Walnut Parmesan
-											<input type="checkbox" name="extras9" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br><br><br>
-										</div>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Chickpea<br>Croutons
+													<input type="checkbox" name="extras9" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Capers
+													<input type="checkbox" name="extras9" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Lemon
+													<input type="checkbox" name="extras9" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Walnut Parmesan
+													<input type="checkbox" name="extras9" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
@@ -772,7 +866,7 @@
 								Shredded kale tossed in our house-made thai peanut dressing, shredded carrot, red cabbage, cucumber, green onion, red pepper, radish, crushed peanuts, lime, mint and basil (add avocado and/or organic marinated tofu for $1 more)
 								<br><br><div class="price">
 								$8.95</div>
-								<!-- Beginning of Modal TwentyNine-->
+								<!-- Beginning of Modal Thirty-->
 								<div id="modalThirty" class="modal">
 								  <div class="modal-content">
 									  <span class="close">&times;</span>
@@ -788,64 +882,94 @@
 										<p>
 										Shredded kale tossed in our house-made thai peanut dressing, shredded carrot, red cabbage, cucumber, green onion, red pepper, radish, crushed peanuts, lime, mint and basil (add avocado and/or organic marinated tofu for $1 more)
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Shredded<br>Carrots
-											<input type="checkbox" name="extras30" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Red Cabbage
-											<input type="checkbox" name="extras30" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Green Onion 
-											<input type="checkbox" name="extras30" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cucumber
-											<input type="checkbox" name="extras30" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Red Pepper
-											<input type="checkbox" name="extras30" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Radish
-											<input type="checkbox" name="extras30" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Crushed Peanuts
-											<input type="checkbox"name="extras30" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Lime
-											<input type="checkbox" name="extras30" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Mint
-											<input type="checkbox" name="extras30" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Basil
-											<input type="checkbox" name="extras30" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Avocado<br>(+ $1.00)
-											<input type="checkbox" name="extras30">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Organic<br>Marinated Tofu<br>(+ $1.00)
-											<input type="checkbox" name="extras30">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Shredded<br>Carrots
+													<input type="checkbox" name="extras30" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Red Cabbage
+													<input type="checkbox" name="extras30" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Green Onion
+													<input type="checkbox" name="extras30" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Cucumber
+													<input type="checkbox" name="extras30" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Red Pepper
+													<input type="checkbox" name="extras30" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Radish
+													<input type="checkbox" name="extras30" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Crushed Peanuts
+													<input type="checkbox" name="extras30" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Lime
+													<input type="checkbox" name="extras30" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Mint
+													<input type="checkbox" name="extras30" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Basil
+													<input type="checkbox" name="extras30" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Avocado<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras30">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Organic<br>Marinated Tofu<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras30">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$8.95</span></div><br><br><br>
@@ -900,50 +1024,61 @@
 										cucumber, red onion, fresh greens and
 										tzaziki sauce in a warm pita 
 										</p>
-										<div class="options">
-										<br><br>
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Cucumbers
-											<input type="checkbox" name="extras10" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Red Onion
-											<input type="checkbox" name="extras10" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Greens
-											<input type="checkbox" name="extras10" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tzaziki Sauce
-											<input type="checkbox" name="extras10" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<br><br><br>
-										<h4>Choose a Side Item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras10">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras10">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras10">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Cucumbers
+													<input type="checkbox" name="extras10" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Red Onion
+													<input type="checkbox" name="extras10" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Fresh Greens
+													<input type="checkbox" name="extras10" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Tzaziki Sauce
+													<input type="checkbox" name="extras10" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras10">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras10">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras10">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
@@ -984,35 +1119,63 @@
 										a creamy, house-made caesar dressing
 										and chickpea croutons
 										</p>
-										<div class="options">
-										<h4>Choose a Side</h4>
-										<div class="checkboxes">
-											<label class="container">House-made<br> 
-											Caesar Dressing
-											<input type="checkbox" name="extras11" checked="checked" checked>
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<br><br><br>
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Shredded Kale
-											<input type="checkbox" name="extras11" checked="checked" checked>
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Brussels Sprouts 
-											<input type="checkbox" name="extras11" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Chickpea <br>Croutons
-											<input type="checkbox" name="extras11" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-										</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose a Side</th>
+											<tr>
+												<td>
+													<label class="container">House-made<br> 
+													Caesar Dressing
+													<input type="checkbox" name="extras11" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Shredded Kale
+													<input type="checkbox" name="extras11" checked="checked" checked>
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Brussells Sprouts
+													<input type="checkbox" name="extras11" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Chickpea<br>Croutons
+													<input type="checkbox" name="extras11" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras11">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras11">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras11">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$8.95</span></div><br><br><br>
@@ -1050,56 +1213,68 @@
 										whole wheat tortilla with greens, shredded
 										carrot, red onion, cucumber, smothered in
 										spicy buffalo sauce and creamy ranch
-
 										</p>
-										<div class="options">
-										<br><br>
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Cucumbers
-											<input type="checkbox" name="extras12" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Red Onion
-											<input type="checkbox" name="extras12" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Greens
-											<input type="checkbox"  name="extras12" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Spicy<br>Buffalo Sauce
-											<input type="checkbox" name="extras12" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Creamy Ranch
-											<input type="checkbox" name="extras12" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<br><br><br>
-										<h4>Choose a Side Item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox"name="extras12">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras12">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras12">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Cucumbers
+													<input type="checkbox" name="extras12" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Red Onion
+													<input type="checkbox" name="extras12" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Fresh Greens
+													<input type="checkbox" name="extras12" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+											<td>
+													<label class="container">Spicy<br>Buffalo Sauce
+													<input type="checkbox" name="extras12" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Creamy Ranch
+													<input type="checkbox" name="extras12" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras12">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras12">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras12">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$3.95</span></div><br><br><br>
@@ -1135,44 +1310,53 @@
 										burger on a pretzel bun with fresh greens,
 										red onion and chipotle sauce
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Fresh Greens
-											<input type="checkbox" name="extras13" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Red Onion
-											<input type="checkbox" name="extras13" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Chipotle Sauce
-											<input type="checkbox" name="extras13" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras13">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras13">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras13">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Fresh Greens
+													<input type="checkbox" name="extras13" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Red Onion
+													<input type="checkbox" name="extras13" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Chipotle Sauce
+													<input type="checkbox" name="extras13" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras13">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras13">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras13">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
@@ -1204,48 +1388,61 @@
 										<p>
 										House-made sweet potato black bean burg-er on a pretzel bun with fresh greens, red onion, spicy buffalo sauce and creamy ranch
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Fresh Greens
-											<input type="checkbox" name="extras14" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Red Onion
-											<input type="checkbox" name="extras14" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Chipotle Sauce
-											<input type="checkbox" name="extras14" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Creamy Ranch
-											<input type="checkbox" name="extras14" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras14">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras14">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras14">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Fresh Greens
+													<input type="checkbox" name="extras14" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Red Onion
+													<input type="checkbox" name="extras14" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Chipotle Sauce
+													<input type="checkbox" name="extras14" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Creamy Ranch
+													<input type="checkbox" name="extras14" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras14">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras14">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras14">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$6.95</span></div><br><br><br>
@@ -1277,40 +1474,47 @@
 										<p>
 										Slow smoked jackfruit smothered in Pappy’s Original BBQ Sauce on a pretzel bun topped with house-made slaw
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Pappy's Original<br>BBQ Sauce
-											<input type="checkbox" name="extras15" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">House-made Slaw
-											<input type="checkbox" name="extras15">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras15">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras15">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras15">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Pappy's Original<br>BBQ Sauce
+													<input type="checkbox" name="extras15" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">House-made Slaw
+													<input type="checkbox" name="extras15">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras15">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras15">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras15">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$7.95</span></div><br><br><br>
@@ -1344,51 +1548,67 @@
 										<p>
 										Marinated and grilled slices of portobello mushroom with fresh avocado, greens, cucumber slices, red onion and house-made tzaziki sauce in a grilled pita
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Fresh Avocado
-											<input type="checkbox" name="extras16" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Greens
-											<input type="checkbox" name="extras16" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cucumber Slices
-											<input type="checkbox" name="extras16" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Red Onion
-											<input type="checkbox" name="extras16" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tzaziki Sauce
-											<input type="checkbox" name="extras16" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras16">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras16">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras16">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Fresh Avocado
+													<input type="checkbox" name="extras16" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Greens
+													<input type="checkbox" name="extras16" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Cucumber Slices
+													<input type="checkbox" name="extras16" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Red Onion
+													<input type="checkbox" name="extras16" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tzaziki Sauce
+													<input type="checkbox" name="extras16" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras16">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras16">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras16">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<br><br><br><br>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
@@ -1421,52 +1641,67 @@
 										<p>
 										White rice, five spice marinated jackfruit, house-made kimchi, spicy mayo, cilantro and scallions wrapped in a whole wheat tortilla and grilled to golden brown
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">White Rice
-											<input type="checkbox" name="extras17" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Marinated<br>Jackfruit
-											<input type="checkbox" name="extras17" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kimichi<br>Spicy Mayo
-											<input type="checkbox" name="extras17" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro
-											<input type="checkbox" name="extras17" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Scallions
-											<input type="checkbox" name="extras17" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras17">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras17">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras17">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">White Rice
+													<input type="checkbox" name="extras17" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Marinated<br>Jackfruit
+													<input type="checkbox" name="extras17" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kimichi<br>Spicy Mayo
+													<input type="checkbox" name="extras17" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras17" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Scallions
+													<input type="checkbox" name="extras17" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras17">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras17">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras17">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$9.95</span></div><br><br><br>
@@ -1515,60 +1750,81 @@
 										<p>
 										Roasted smoky sweet potato, mushroom and onions with black beans, fresh avocado and cilantro with house-made spicy chipotle sauce on white corn tortillas
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Smoky<br>Sweet Potato
-											<input type="checkbox" name="extras18" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Mushroom
-											<input type="checkbox" name="extras18" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Onions
-											<input type="checkbox" name="extras18" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Black Beans
-											<input type="checkbox" name="extras18" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro
-											<input type="checkbox" name="extras18" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Avocado
-											<input type="checkbox" name="extras18" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Spicy<br>Chipotle Sauce
-											<input type="checkbox" name="extras18" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras18">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras18">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras18">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Smoky<br>Sweet Potato
+													<input type="checkbox" name="extras18" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Mushroom
+													<input type="checkbox" name="extras18" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Onions
+													<input type="checkbox" name="extras18" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Black Beans
+													<input type="checkbox" name="extras18" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras18" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Fresh Avocado
+													<input type="checkbox" name="extras18" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Spicy<br>Chipotle Sauce
+													<input type="checkbox" name="extras18" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras18">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras18">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras18">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$9.95</span></div><br><br><br>
@@ -1604,65 +1860,87 @@
 										<p>
 										Five spice marinated jackfruit with shredded carrot, cucumber, onion, cilantro, lime, radish, mayo and house-made vietnamese banh mi sauce on white corn tortillas
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Jackfruit
-											<input type="checkbox" name="extras19"checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Shredded Carrots
-											<input type="checkbox" name="extras19" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cucumber
-											<input type="checkbox" name="extras19" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Onion
-											<input type="checkbox" name="extras19" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro
-											<input type="checkbox" name="extras19" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Lime Radish
-											<input type="checkbox" name="extras19" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Mayo
-											<input type="checkbox" name="extras19" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">House-made<br>
-											Vietnameese<br>Banh Mi Sauce
-											<input type="checkbox" name="extras19" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras19">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras19">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras19">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Jackfruit
+													<input type="checkbox" name="extras19" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Shredded Carrots
+													<input type="checkbox" name="extras19" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Cucumber
+													<input type="checkbox" name="extras19" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Onion
+													<input type="checkbox" name="extras19" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras19" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Lime Radish
+													<input type="checkbox" name="extras19" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Mayo
+													<input type="checkbox" name="extras19" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">House-made<br>Vietnameese<br>Banh Mi Sauce
+													<input type="checkbox" name="extras19" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras19">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras19">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras19">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$7.95</span></div><br><br><br>
@@ -1696,65 +1974,87 @@
 										<p>
 										Five spice marinated jackfruit with fresh greens, shredded carrot, cucumber, onion, cilantro, fresh avocado, radish, mayo and house-made vietnamese banh mi sauce wrapped in a whole wheat tortilla
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Jackfruit
-											<input type="checkbox" name="extras20" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Shredded Carrots
-											<input type="checkbox" name="extras20" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cucumber
-											<input type="checkbox" name="extras20" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Onion
-											<input type="checkbox" name="extras20" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro
-											<input type="checkbox" name="extras20" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Lime Radish
-											<input type="checkbox" name="extras20" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Mayo
-											<input type="checkbox" name="extras20" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">House-made<br>
-											Vietnameese<br>Banh Mi Sauce
-											<input type="checkbox" name="extras20" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras20">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras20">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras20">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Jackfruit
+													<input type="checkbox" name="extras20" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Shredded Carrots
+													<input type="checkbox" name="extras20" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Cucumber
+													<input type="checkbox" name="extras20" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Onion
+													<input type="checkbox" name="extras20" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras20" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Lime Radish
+													<input type="checkbox" name="extras20" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Mayo
+													<input type="checkbox" name="extras20" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">House-made<br>Vietnameese<br>Banh Mi Sauce
+													<input type="checkbox" name="extras20" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras20">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras20">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras20">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$8.95</span></div><br><br><br>
@@ -1788,64 +2088,87 @@
 										<p>
 										Roasted sweet potato, mushroom and onion with smoked white bean hummus, brown rice, black beans, shredded kale and fresh avocado with house-made chipotle sauce wrapped in a whole wheat tortilla
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Sweet Potato
-											<input type="checkbox" name="extras21" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Mushroom
-											<input type="checkbox" name="extras21"checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Onion
-											<input type="checkbox" name="extras21" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">White<br>Bean Hummus
-											<input type="checkbox" name="extras21" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Brown Rice
-											<input type="checkbox" name="extras21"checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Shredded Kale
-											<input type="checkbox" name="extras21" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Avocado
-											<input type="checkbox" name="extras21" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">House-made<br>Chipotle Sauce
-											<input type="checkbox" name="extras21" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras21">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras21">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras21">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Sweet Potato
+													<input type="checkbox" name="extras21" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Mushroom
+													<input type="checkbox" name="extras21" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Onion
+													<input type="checkbox" name="extras21" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">White<br>Bean Hummus
+													<input type="checkbox" name="extras21" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Brown Rice
+													<input type="checkbox" name="extras21" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Shredded Kale
+													<input type="checkbox" name="extras21" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Fresh Avocado
+													<input type="checkbox" name="extras21" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">House-made<br>Chipotle Sauce
+													<input type="checkbox" name="extras21" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras21">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras21">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras21">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$8.95</span></div><br><br><br>
@@ -1881,44 +2204,53 @@
 										<p>
 										Slow smoked jackfruit smothered in Pappy’s Original BBQ Sauce topped with house-made slaw on white corn tortillas
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Jackfruit
-											<input type="checkbox" name="extras22" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Pappy’s Original<br>BBQ Sauce
-											<input type="checkbox" name="extras22" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">House-made<br>Slaw
-											<input type="checkbox" name="extras22" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras22">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras22">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras22">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Jackfruit
+													<input type="checkbox" name="extras22" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Pappy’s Original<br>BBQ Sauce
+													<input type="checkbox" name="extras22" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">House-made<br>Slaw
+													<input type="checkbox" name="extras22" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras22">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras22">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras22">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$7.95</span></div><br><br><br>
@@ -1950,76 +2282,107 @@
 										<p>
 										House-made crispy cauliflower bites with fresh greens, cucumber, shredded carrot, green onion, cilantro, crushed peanuts, fresh avocado, basil and mint with our house-made peanut sauce wrapped in a whole wheat tortilla
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Cauliflower Bites
-											<input type="checkbox" name="extras23"checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Greens
-											<input type="checkbox" name="extras23" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cucumber
-											<input type="checkbox" name="extras23" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Shredded Carrots
-											<input type="checkbox" name="extras23" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Green Onion
-											<input type="checkbox" name="extras23" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro
-											<input type="checkbox" name="extras23" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Crushed Peanuts
-											<input type="checkbox" name="extras23" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Avocado
-											<input type="checkbox" name="extras23" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Basil
-											<input type="checkbox" name="extras23" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Mint
-											<input type="checkbox" name="extras23" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">House-made<br>Peanut Sauce
-											<input type="checkbox" name="extras23" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Billy Goat Chips<br>
-											(+ $1.00)
-											<input type="checkbox" name="extras23">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Tater Tots<br>
-											(+ $2.00)
-											<input type="checkbox" name="extras23">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Kale Salad<br>
-											(+ $3.00)
-											<input type="checkbox" name="extras23">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Cauliflower Bites
+													<input type="checkbox" name="extras23" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Fresh Greens
+													<input type="checkbox" name="extras23" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Cucumber
+													<input type="checkbox" name="extras23" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Shredded Carrots
+													<input type="checkbox" name="extras23" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Green Onion
+													<input type="checkbox" name="extras23" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras23" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Crushed Peanuts
+													<input type="checkbox" name="extras23" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Fresh Avocado
+													<input type="checkbox" name="extras23" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Basil
+													<input type="checkbox" name="extras23" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Mint
+													<input type="checkbox" name="extras23" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">House-made<br>Peanut Sauce
+													<input type="checkbox" name="extras23" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item</th>
+											<tr>
+												<td>
+													<label class="container">Billy Goat Chips<br>
+													(+ $1.00)
+													<input type="checkbox" name="extras23">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Tater Tots<br>
+													(+ $2.00)
+													<input type="checkbox" name="extras23">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Kale Salad<br>
+													(+ $3.00)
+													<input type="checkbox" name="extras23">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$8.95</span></div><br><br><br>
@@ -2066,54 +2429,77 @@
 										<p>
 										Udon noodles, organic marinated tofu, stir fried vegetables, crushed peanuts, green onion, cilantro, lime, sesame seeds, basil and mint with house-made peanut sauce
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Organic<br>Marinated<br>Tofu Stir
-											<input type="checkbox" name="extras24" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fried Vegetables
-											<input type="checkbox" name="extras24" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Crushed Peanuts
-											<input type="checkbox" name="extras24" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Green Onion
-											<input type="checkbox" name="extras24" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro
-											<input type="checkbox" name="extras24" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Lime
-											<input type="checkbox" name="extras24" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Sesame Seeds
-											<input type="checkbox" name="extras24" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Basil
-											<input type="checkbox" name="extras24" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Mint
-											<input type="checkbox" name="extras24" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">House-made<br>Peanut Sauce
-											<input type="checkbox" name="extras24" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br>
-										</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Organic<br>Marinated<br>Tofu Stir
+													<input type="checkbox" name="extras24" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Fried Vegetables
+													<input type="checkbox" name="extras24" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Crushed Peanuts
+													<input type="checkbox" name="extras24" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Green Onion
+													<input type="checkbox" name="extras24" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras24" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Lime
+													<input type="checkbox" name="extras24" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Sesame Seeds
+													<input type="checkbox" name="extras24" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Basil
+													<input type="checkbox" name="extras24" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Mint
+													<input type="checkbox" name="extras24" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">House-made<br>Peanut Sauce
+													<input type="checkbox" name="extras24" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$9.95</span></div><br><br><br>
@@ -2146,61 +2532,89 @@
 										<p>
 										House-made crispy cauliflower bites over fresh greens, brown rice, cucumber, shredded carrot, green onion, cilantro, crushed peanuts, fresh avocado, lime, basil and mint with our house-made peanut sauce
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">House-made<br>Cauliflower<br>Bites
-											<input type="checkbox" name="extras27" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Greens
-											<input type="checkbox" name="extras27" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Brown Rice 
-											<input type="checkbox" name="extras27" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cucumber
-											<input type="checkbox" name="extras27" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Green Onion
-											<input type="checkbox" name="extras27" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro
-											<input type="checkbox" name="extras27" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Crushed Peanuts
-											<input type="checkbox" name="extras27"checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Avocado
-											<input type="checkbox" name="extras27" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Lime 
-											<input type="checkbox" name="extras27" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Basil 
-											<input type="checkbox" name="extras27" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Mint 
-											<input type="checkbox" name="extras27" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">House-made<br>Peanut Sauce 
-											<input type="checkbox" name="extras27" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br><br><br>
-										</div>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">House-made<br>Cauliflower<br>Bites
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Fresh Greens
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Brown Rice
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Cucumber
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Green Onion
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Crushed Peanuts
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Fresh Avocado
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Lime
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Basil
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Mint
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">House-made<br>Peanut Sauce
+													<input type="checkbox" name="extras27" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$9.95</span></div><br><br><br>
@@ -2233,57 +2647,83 @@
 										<p>
 										Roasted sweet potato, mushroom and onion over shredded kale, brown rice, black beans topped with smoked jack-fruit, bbq sauce, spicy chipotle sauce, fresh avocado cilantro and green onion
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Roasted<br>Sweet Potato
-											<input type="checkbox" name="extras28" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Mushroom
-											<input type="checkbox" name="extras28" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Onion 
-											<input type="checkbox" name="extras28"checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Shedded Kale
-											<input type="checkbox" name="extras28" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Brown Rice
-											<input type="checkbox" name="extras28" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Smoked<br>Jackfruit
-											<input type="checkbox" name="extras28" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">BBQ Sauce
-											<input type="checkbox" name="extras28" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Spicy<br>Chipotle Sauce
-											<input type="checkbox" name="extras28" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Avocado 
-											<input type="checkbox" name="extras28" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cilantro 
-											<input type="checkbox" name="extras28" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Green Onion 
-											<input type="checkbox" name="extras28" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br><br><br>
-										</div>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Roasted<br>Sweet Potato
+													<input type="checkbox" name="extras28" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Mushroom
+													<input type="checkbox" name="extras28" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Onion
+													<input type="checkbox" name="extras28" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Shredded Kale
+													<input type="checkbox" name="extras28" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Brown Rice
+													<input type="checkbox" name="extras28" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Smoked<br>Jackfruit
+													<input type="checkbox" name="extras28" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">BBQ Sauce
+													<input type="checkbox" name="extras28" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Spicy<br>Chipotle Sauce
+													<input type="checkbox" name="extras28" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Fresh Avocado
+													<input type="checkbox" name="extras28" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Cilantro
+													<input type="checkbox" name="extras28" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Green Onion
+													<input type="checkbox" name="extras28" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$9.95</span></div><br><br><br>
@@ -2320,52 +2760,73 @@
 										<p>
 										Sushi rice, watermelon sashimi, avocado, cucumber, radish, scallions, pickled ginger and our house made spicy mayo served with a side of wasabi
 										</p>
-										<div class="options">
-										<h4>Choose or Remove a Topping</h4>
-										<div class="checkboxes">
-											<label class="container">Watermelon
-											<input type="checkbox" name="extras29" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Sashimi
-											<input type="checkbox" name="extras29" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Fresh Avocado 
-											<input type="checkbox" name="extras29" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Cucumber
-											<input type="checkbox" name="extras29" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Radish
-											<input type="checkbox" name="extras29" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Scallions
-											<input type="checkbox" name="extras29" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Pickled Ginger
-											<input type="checkbox" name="extras29" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Spicy<br>Mayo
-											<input type="checkbox" name="extras29" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											<br><br><br><br><br>
-										</div>
-										<h4>Choose a side item</h4>
-										<div class="checkboxes">
-											<label class="container">Wasabi
-											<input type="checkbox" name="extras29" checked="checked">
-											<span class="checkmark"></span>
-											</label>
-											</div>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Watermelon
+													<input type="checkbox" name="extras29" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Sashimi
+													<input type="checkbox" name="extras29" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Fresh Avocado
+													<input type="checkbox" name="extras29" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Cucumber
+													<input type="checkbox" name="extras29" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Radish
+													<input type="checkbox" name="extras29" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Scallions
+													<input type="checkbox" name="extras29" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="container">Pickled Ginger
+													<input type="checkbox" name="extras29" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Spicy Mayo
+													<input type="checkbox" name="extras29" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+											<th colspan="3">Choose a Side Item
+											</th>
+											<tr>
+												<td>
+													<label class="container">Wasabi
+													<input type="checkbox" name="extras29" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$9.95</span></div><br><br><br>
@@ -2457,25 +2918,29 @@
 										<p>
 										One kids taco of your choice
 										</p>
-										<div class="options">
-										<h4>Choose a Taco</h4>
-										<div class="checkboxes">
-											<label class="container">Lulu's Taco
-											<input type="checkbox" name="extras33"checked="checked" checked>
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">Banh Mi Taco
-											<input type="checkbox" name="extras33">
-											<span class="checkmark"></span>
-											</label>
-											<label class="container">BBQ Jack Taco
-											<input type="checkbox" name="extras33">
-											<span class="checkmark"></span>
-											</label>
-										</div>
-										<br><br><br><br><br>
-									</div>
-									<br><br><br><br>
+										<table id="optable">
+											<th colspan="3">Choose or Remove a Topping</th>
+											<tr>
+												<td>
+													<label class="container">Lulu's Taco
+													<input type="checkbox" name="extras33" checked="checked">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">Banh Mi Taco
+													<input type="checkbox" name="extras33">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+												<td>
+													<label class="container">BBQ Jack Taco
+													<input type="checkbox" name="extras33">
+													<span class="checkmark"></span>
+													</label>
+												</td>
+											</tr>
+										</table>
 									<div id="qty">Quantity: <input type="number" name="quantity"min="1" value="1"></div>
 									<br><br>
 									<div id="total">Total:<span id="totalAmt">     &nbsp;&nbsp;&nbsp;&nbsp;$2.95</span></div><br><br><br>
