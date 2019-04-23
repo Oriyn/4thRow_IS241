@@ -14,7 +14,7 @@ function displayItems(){
     var total = localStorage.getItem("totalPrice");
     var items = JSON.parse(localStorage.getItem("CartItems"));
     console.log(items);
-    const displayCartItems = items.reduce((acc,value, index) => acc += (index + 1) + ". " + value + ' <button onclick="deleteItem('+ index +')">Remove item</button><br>', "")
+    const displayCartItems = items.reduce((acc,value, index) => acc += (index + 1) + ". " + value + ' <button onclick="deleteItem('+ index +')">Remove item</button><br><br>', "")
     document.getElementById("DisplayCart").innerHTML = displayCartItems;
     document.getElementById("totalPrice").innerHTML = "Total: $" + total;
     }
