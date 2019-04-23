@@ -4,7 +4,7 @@ function cartAPI(itemNo){
     var order = "";
     var qtybox = document.getElementsByName("quantity");
     var price;
-    var total = parseInt(localStorage.getItem("totalPrice"));
+    var total = parseFloat(localStorage.getItem("totalPrice"));
     switch(itemNo){
         case 1:
         var qty = qtybox[0].value;
