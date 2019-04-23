@@ -10,9 +10,6 @@ function deleteItem(itemNo){
     numOfItems --;
     localStorage.setItem("NumOfItems", numOfItems);
     document.getElementById("cartNum").innerHTML = localStorage.getItem("NumOfItems");
-    if (localStorage.getItem("NumOfItems") === 0){
-        clearCart();
-    }
 };
 
 function reduceTotal(itemNo){
@@ -22,5 +19,8 @@ function reduceTotal(itemNo){
     const parsedItem = parseFloat(splitItem[1]);
     var newtotal = parseFloat(localStorage.getItem("totalPrice") - parsedItem);
     localStorage.setItem("totalPrice", newtotal.toFixed(2)); 
+    if(newtotal == 0){
+        clearCart();
+    }
     console.log(newtotal);
 }

@@ -9,7 +9,7 @@ function cartAPI(itemNo){
         case 1:
         var qty = qtybox[0].value;
         price = 5.95 * qty;
-        order = "Buffalo cauliflower bites, Price: $"+ price.toFixed(2) +", Quantity: "+ qty;
+        order = "Buffalo cauliflower bites, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No ranch";
         }
@@ -20,6 +20,7 @@ function cartAPI(itemNo){
           order += ", No extra buffalo sauce on the side";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -27,7 +28,7 @@ function cartAPI(itemNo){
         case 2:
         var qty = qtybox[1].value;
         price = 6.95 * qty;
-        order = "Kale Salad, Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Kale Salad, Quantity: " + qty;
         if(ifChecked[0].checked != true){
             order += ", No cranberries";
         }
@@ -41,6 +42,7 @@ function cartAPI(itemNo){
           order += ", No maple mustard dressing";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -48,7 +50,7 @@ function cartAPI(itemNo){
         case 3:
         var qty = qtybox[2].value;
         price = 3.95 * qty;
-        order = "Tater Tots, Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Tater Tots, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No chipotle dipping sauce";
         }
@@ -56,6 +58,7 @@ function cartAPI(itemNo){
           order += ", No cajun seasoning";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -63,7 +66,7 @@ function cartAPI(itemNo){
         case 4:
         var qty = qtybox[3].value;
         price = 6.49 * qty;
-        order = "Mac N' Cheese, Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Mac N' Cheese, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No walnut parmesean";
         }
@@ -77,6 +80,7 @@ function cartAPI(itemNo){
             order += ", No nacho mac flavor";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -84,7 +88,7 @@ function cartAPI(itemNo){
         case 5:
         var qty = qtybox[4].value;
         price = 5.95 * qty;
-        order = "Lulu's Chili, Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Lulu's Chili, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No Butternut squash cheese";
         }
@@ -98,6 +102,7 @@ function cartAPI(itemNo){
             order += ", No cilantro";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -105,7 +110,7 @@ function cartAPI(itemNo){
         case 6:
         var qty = qtybox[5].value;
         price = 5.95 * qty;
-        order = "Volcano Tots, Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Volcano Tots, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No Butternut squash cheese";
         }
@@ -119,6 +124,7 @@ function cartAPI(itemNo){
             order += ", No cilantro";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -126,7 +132,7 @@ function cartAPI(itemNo){
         case 7:
         var qty = qtybox[6].value;
         price = 8.95 * qty;
-        order = "Loaded Nachos, Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Loaded Nachos, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No Butternut squash cheese";
         }
@@ -149,6 +155,7 @@ function cartAPI(itemNo){
             order += ", No cilantro";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -156,7 +163,7 @@ function cartAPI(itemNo){
         case 8:
         var qty = qtybox[7].value;
         price = 6.95 * qty;
-        order = "Loaded Nacho Tots, Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Loaded Nacho Tots, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No Butternut squash cheese";
         }
@@ -179,6 +186,7 @@ function cartAPI(itemNo){
             order += ", No cilantro";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -186,11 +194,12 @@ function cartAPI(itemNo){
 		case 25:
         var qty = qtybox[8].value;
         price = 6.95 * qty;
-        order = "Smoked White Bean Hummus , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Smoked White Bean Hummus, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No cucumber ";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -198,7 +207,7 @@ function cartAPI(itemNo){
 		case 26:
         var qty = qtybox[9].value;
         price = 9.95 * qty;
-        order = "Poké Lettuce Wraps , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Poké Lettuce Wraps, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No sushi";
         }
@@ -227,6 +236,7 @@ function cartAPI(itemNo){
             order += ", No black sesame seeds";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -234,7 +244,7 @@ function cartAPI(itemNo){
         case 9:
         var qty = qtybox[10].value;
         price = 8.95 * qty;
-        order = "Kale & Brussells Sprouts Caesar Salad , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Kale & Brussells Sprouts Caesar Salad, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No chickpea crutons";
         }
@@ -248,6 +258,7 @@ function cartAPI(itemNo){
             order += ", No walnut parmesan";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -255,7 +266,7 @@ function cartAPI(itemNo){
 		case 30:
         var qty = qtybox[11].value;
         price = 8.95 * qty;
-        order = "Thai Crunch Salad , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Thai Crunch Salad, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No shredded carrots";
         }
@@ -285,15 +296,16 @@ function cartAPI(itemNo){
 		if(ifChecked[9].checked != true){
             order += ", No basil";
         }
-		if(ifChecked[10].checked != true){
-            order += ", No side item: Avocado";
+		if(ifChecked[10].checked == true){
+            order += ", side item: Avocado";
             price += 1.00;
         }
-        if(ifChecked[11].checked != true){
-              order += ", No side item: Organic Marinated Tofu";
+        if(ifChecked[11].checked == true){
+              order += ", side item: Organic Marinated Tofu";
               price += 1.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -301,7 +313,7 @@ function cartAPI(itemNo){
         case 10:
         var qty = qtybox[12].value;
         price = 6.95 * qty;
-        order = "Sweet potato falafel , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Sweet potato falafel, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No cucumbers";
         }
@@ -314,19 +326,20 @@ function cartAPI(itemNo){
         if(ifChecked[3].checked != true){
             order += ", No tzaziki sauce";
         }
-        if(ifChecked[4].checked != true){
-            order += ", No side item: Billy goat chips";
+        if(ifChecked[4].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[5].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[5].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[6].checked != true){
-              order += ", No side item: kale salad";
+        if(ifChecked[6].checked == true){
+              order += ", side item: kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -334,7 +347,7 @@ function cartAPI(itemNo){
         case 11:
         var qty = qtybox[13].value;
         price = 8.95 * qty;
-        order = "Buffalo Caesar Wrap , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Buffalo Caesar Wrap, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No House-made caesar dressing ";
         }
@@ -347,19 +360,20 @@ function cartAPI(itemNo){
         if(ifChecked[3].checked != true){
             order += ", No chickpea croutons";
         }
-		if(ifChecked[4].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[4].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[5].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[5].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[6].checked != true){
-              order += ", No side item: kale salad";
+        if(ifChecked[6].checked == true){
+              order += ", side item: kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -367,7 +381,7 @@ function cartAPI(itemNo){
         case 12:
         var qty = qtybox[14].value;
         price = 7.95 * qty;
-        order = "Buffalo cauliflower wrap , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Buffalo cauliflower wrap, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No cucumbers";
         }
@@ -383,19 +397,20 @@ function cartAPI(itemNo){
         if(ifChecked[4].checked != true){
             order += ", No creamy ranch";
         }
-		if(ifChecked[5].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[5].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[6].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[6].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[7].checked != true){
-              order += ", No side item: Kale salad";
+        if(ifChecked[7].checked == true){
+              order += ", side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -403,7 +418,7 @@ function cartAPI(itemNo){
 		case 13:
         var qty = qtybox[15].value;
         price = 6.95 * qty;
-        order = "Sweet Potato Black Bean Burger , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Sweet Potato Black Bean Burger, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No fresh greens";
         }
@@ -413,19 +428,20 @@ function cartAPI(itemNo){
         if(ifChecked[2].checked != true){
             order += ", No chipotle sauce";
         }
-		if(ifChecked[3].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[3].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[4].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[4].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[5].checked != true){
-              order += ", No side item: Kale salad";
+        if(ifChecked[5].checked == true){
+              order += ", side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -433,7 +449,7 @@ function cartAPI(itemNo){
 		case 14:
         var qty = qtybox[16].value;
         price = 6.95 * qty;
-        order = "Buffalo Blue Burger , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Buffalo Blue Burger , Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No fresh greens";
         }
@@ -446,19 +462,20 @@ function cartAPI(itemNo){
         if(ifChecked[3].checked != true){
             order += ", No creamy ranch";
         }
-		if(ifChecked[4].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[4].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[5].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[5].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[6].checked != true){
-              order += ", No side item: Kale salad";
+        if(ifChecked[6].checked == true){
+              order += ", side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -466,26 +483,27 @@ function cartAPI(itemNo){
 		case 15:
         var qty = qtybox[17].value;
         price = 7.95 * qty;
-        order = "The BBQ Jack , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "The BBQ Jack, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No Pappy's Original BBQ Sauce";
         }
         if(ifChecked[1].checked != true){
           order += ", No House-made Slaw";
         }
-		if(ifChecked[2].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[2].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[3].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[3].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[4].checked != true){
-              order += ", No side item: Kale salad";
+        if(ifChecked[4].checked == true){
+              order += ", side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -493,7 +511,7 @@ function cartAPI(itemNo){
 		case 16:
         var qty = qtybox[18].value;
         price = 7.95 * qty;
-        order = "Portobello Gyro , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Portobello Gyro, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No fresh avocado";
         }
@@ -509,19 +527,20 @@ function cartAPI(itemNo){
         if(ifChecked[4].checked != true){
             order += ", No tzaziki sauce";
         }
-		if(ifChecked[5].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[5].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[6].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[6].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[7].checked != true){
-              order += ", No side item: Kale salad";
+        if(ifChecked[7].checked == true){
+              order += ", side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -529,7 +548,7 @@ function cartAPI(itemNo){
 		case 17:
         var qty = qtybox[19].value;
         price = 9.95 * qty;
-        order = "Kimichi Crunch Wrap , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Kimichi Crunch Wrap, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No white rice";
         }
@@ -545,19 +564,20 @@ function cartAPI(itemNo){
         if(ifChecked[4].checked != true){
             order += ", No scallions";
         }
-		if(ifChecked[5].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[5].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[6].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[6].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[7].checked != true){
-              order += ", No side item: Kale salad";
+        if(ifChecked[7].checked == true){
+              order += ", side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -565,7 +585,7 @@ function cartAPI(itemNo){
 		case 18:
         var qty = qtybox[20].value;
         price = 7.95 * qty;
-        order = "Lulu's Tacos , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Lulu's Tacos, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No smoky sweet potato";
         }
@@ -587,19 +607,20 @@ function cartAPI(itemNo){
 		if(ifChecked[6].checked != true){
             order += ", No spicy chipotle sauce";
         }
-		if(ifChecked[7].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[7].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[8].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[8].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[9].checked != true){
-              order += ", No side item: Kale salad";
+        if(ifChecked[9].checked == true){
+              order += ", side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -607,7 +628,7 @@ function cartAPI(itemNo){
 		case 19:
         var qty = qtybox[21].value;
         price = 7.95 * qty;
-        order = "Banh Mi Tacos , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Banh Mi Tacos, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No jackfruit";
         }
@@ -632,19 +653,20 @@ function cartAPI(itemNo){
 		if(ifChecked[7].checked != true){
             order += ", No house-made Vietnameese Banh Mi Sauce";
         }
-		if(ifChecked[8].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[8].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[9].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[9].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[10].checked != true){
-              order += ", No side item: Kale salad";
+        if(ifChecked[10].checked == true){
+              order += ", side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -652,7 +674,7 @@ function cartAPI(itemNo){
 		case 20:
         var qty = qtybox[22].value;
         price = 8.95 * qty;
-        order = "Banh Mi Burrito , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Banh Mi Burrito, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No jackfruit";
         }
@@ -677,19 +699,20 @@ function cartAPI(itemNo){
 		if(ifChecked[7].checked != true){
             order += ", No house-made Vietnameese Banh Mi Sauce";
         }
-		if(ifChecked[8].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[8].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[9].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[9].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[10].checked != true){
-              order += ", No side item: Kale salad";
+        if(ifChecked[10].checked == true){
+              order += ", side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -697,7 +720,7 @@ function cartAPI(itemNo){
 		case 21:
         var qty = qtybox[23].value;
         price = 8.95 * qty;
-        order = "Chipotle Black Bean Burrito , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Chipotle Black Bean Burrito, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No sweet potato";
         }
@@ -722,19 +745,20 @@ function cartAPI(itemNo){
 		if(ifChecked[7].checked != true){
             order += ", No house-made chipotle sauce";
 		}
-		if(ifChecked[8].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[8].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[9].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[9].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[10].checked != true){
-              order += ", No side item: Kale salad";
+        if(ifChecked[10].checked == true){
+              order += ", side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -742,7 +766,7 @@ function cartAPI(itemNo){
 		case 22:
         var qty = qtybox[24].value;
         price = 7.95 * qty;
-        order = "BBQ Jack Tacos , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "BBQ Jack Tacos, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No jackfruit";
         }
@@ -752,19 +776,20 @@ function cartAPI(itemNo){
         if(ifChecked[2].checked != true){
             order += ", No house-made slaw";
         }
-		if(ifChecked[3].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[3].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[4].checked != true){
+        if(ifChecked[4].checked == true){
               order += ", No side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[5].checked != true){
+        if(ifChecked[5].checked == true){
               order += ", No side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -772,7 +797,7 @@ function cartAPI(itemNo){
 		case 23:
         var qty = qtybox[25].value;
         price = 8.95 * qty;
-        order = "Spring Roll Burrito , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Spring Roll Burrito, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No cauliflower bites";
         }
@@ -806,19 +831,20 @@ function cartAPI(itemNo){
 		if(ifChecked[10].checked != true){
             order += ", No house-made peanut sauce";
 		}
-		if(ifChecked[11].checked != true){
-            order += ", No side item: Billy goat chips";
+		if(ifChecked[11].checked == true){
+            order += ", side item: Billy goat chips";
             price += 1.00;
         }
-        if(ifChecked[12].checked != true){
-              order += ", No side item: Tater tots";
+        if(ifChecked[12].checked == true){
+              order += ", side item: Tater tots";
               price += 2.00;
         }
-        if(ifChecked[13].checked != true){
-              order += ", No side item: Kale salad";
+        if(ifChecked[13].checked == true){
+              order += ", side item: Kale salad";
               price += 3.00;
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -826,7 +852,7 @@ function cartAPI(itemNo){
 		case 24:
         var qty = qtybox[26].value;
         price = 9.95 * qty;
-        order = "Buddah Bowl , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Buddah Bowl, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No organic marinated tofu";
         }
@@ -858,6 +884,7 @@ function cartAPI(itemNo){
             order += ", No house-made peanut sauce";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -865,7 +892,7 @@ function cartAPI(itemNo){
 		case 27:
         var qty = qtybox[27].value;
         price = 9.95 * qty;
-        order = "Spring Roll Bowl , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Spring Roll Bowl, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No house-made cauliflower bites";
         }
@@ -903,6 +930,7 @@ function cartAPI(itemNo){
             order += ", No house-made peanut sauce";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -910,7 +938,7 @@ function cartAPI(itemNo){
 		case 28:
         var qty = qtybox[28].value;
         price = 9.95 * qty;
-        order = "Chipotle Black Bean Bowl , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Chipotle Black Bean Bowl, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No roasted sweet potato";
         }
@@ -945,6 +973,7 @@ function cartAPI(itemNo){
             order += ", No green onion";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -952,7 +981,7 @@ function cartAPI(itemNo){
 		case 29:
         var qty = qtybox[29].value;
         price = 9.95 * qty;
-        order = "Sushi Bowl , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Sushi Bowl, Quantity: "+ qty;
         if(ifChecked[0].checked != true){
             order += ", No watermelon";
         }
@@ -981,6 +1010,7 @@ function cartAPI(itemNo){
             order += ", No wasabi";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -988,8 +1018,9 @@ function cartAPI(itemNo){
 		case 32:
         var qty = qtybox[30].value;
         price = 2.95 * qty;
-        order = "Cauliflower Nuggets , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Cauliflower Nuggets, Quantity: "+ qty;
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -997,7 +1028,7 @@ function cartAPI(itemNo){
 		case 33:
         var qty = qtybox[31].value;
         price = 2.95 * qty;
-        order = "Kids Taco (1) , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Kids Taco (1), Quantity: "+ qty;
 		if(ifChecked[0].checked != true){
             order += ", No Lulu's Taco";
         }
@@ -1008,6 +1039,7 @@ function cartAPI(itemNo){
             order += ", No BBQ Jack Taco";
         }
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -1015,8 +1047,9 @@ function cartAPI(itemNo){
 		case 34:
         var qty = qtybox[32].value;
         price = 3.95 * qty;
-        order = "Mini Burger (1) , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "Mini Burger (1), Quantity: "+ qty;
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
@@ -1024,8 +1057,9 @@ function cartAPI(itemNo){
 		case 35:
         var qty = qtybox[33].value;
         price = 3.95 * qty;
-        order = "BBQ Slider (1) , Price: $"+ price.toFixed(2) + ", Quantity: "+ qty;
+        order = "BBQ Slider (1), Quantity: "+ qty;
         total += price;
+        order += ", Price: $"+ price.toFixed(2);
         localStorage.setItem("totalPrice", total);
         return order;
         break;
