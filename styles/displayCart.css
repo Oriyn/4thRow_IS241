@@ -1,9 +1,9 @@
-#DisplayCart{
+#DisplayCart, #totalPrice{
  text-align: center;
  font-weight: bold;
 };
 
-span #DisplayCart{
+span #DisplayCart, #totalPrice{
     text-align: center;
 };
 a {color:black;}
