@@ -8,7 +8,7 @@
 	'maincontent maincontent'
 	'gridContainer gridContainer'
 	'gridContainer gridContainer'
-	'aside aside'
+	'gencontent gencontent'
 }
 .grid-container {
   grid-area: gridContainer;
@@ -26,14 +26,52 @@
   'item item2'
   'item3 item4'
 }
+ .gencontent{
+	grid-area: gencontent;
+	background-color: #000000;
+	margin: auto;
+	background-image: url('../assets/food.png');
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	'menus specials discounts';
+ }
+#menu { grid-area: menu;
+			border: 1px solid #000000;
+			//background-color: rgba(201, 157, 227);
+			background-color: #502294;
+			padding: 20px;
+			text-align: center;
+			background-image: url('../assets/food.png');
+            color:white;
+ }
+ #menu #specials #discounts p { font-size: 25px; } 
+ 
+  #specials { grid-area: menu;
+			border: 1px solid #000000;
+			background-color: #233696;
+			padding: 20px;
+			text-align: center;
+			background-image: url('../assets/swirl.png');
+ }
+  #discounts { grid-area: menu;
+			border: 1px solid #000000;
+			background-color: #20618c;
+			padding: 20px;
+			text-align: center;
+			background-image: url('../assets/diagmonds-light.png');
+ }
+ #logoimg { margin-left: 400px; }
+ .gencontent { grid-area: gencontent;
+				margin: auto; 
+				}
+.gencontent a { color: white; }
+.gencontent a:visited { color: white; }
 p {
     text-align:center;
 }
 .maincontent {
 	grid-area:maincontent;
-}
-.asidebar {
-	grid-area:aside;
 }
 .grid-item {
   grid-area: item;
@@ -79,3 +117,7 @@ a:visited {
   h3:hover { text-decoration: none; color: blue; }
   h3:focus { text-decoration: none; color: blue; }
   h3:hover, h3:active { text-decoration: none; color: blue; }
+@media only screen and (max-width: 950px) {
+		 
+ 	 #logoimg { margin-left: 180px; }
+}

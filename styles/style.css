@@ -109,10 +109,6 @@ nav { letter-spacing: 0.1em;
 #social img { margin-top: 50px;
 			  padding-right: 30px;
  }
-/* #social img{	 
-			margin-top: 50px;
-			padding-right: 30px;
- } */
  #location { 
      grid-area: location;
      margin:auto;
@@ -145,8 +141,7 @@ nav { letter-spacing: 0.1em;
 			text-align: center;
 			background-image: url('../assets/diagmonds-light.png');
  }
- #h2 { color: #}
-
+.icons { padding-right: 8px; }
 form { background-color:#eaeaea;
 	   font-family: Arial, sans-serif;
        padding: 10px;
