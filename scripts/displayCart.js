@@ -17,5 +17,6 @@ function displayItems(){
     const displayCartItems = items.reduce((acc,value, index) => acc += (index + 1) + ". " + value + ' <button onclick="deleteItem('+ index +')">Remove item</button><br><br>', "")
     document.getElementById("DisplayCart").innerHTML = displayCartItems;
     document.getElementById("totalPrice").innerHTML = "Total: $" + total;
+    console.log(total);
     }
 };
