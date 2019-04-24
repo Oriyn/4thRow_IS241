@@ -1,5 +1,5 @@
 function cartAPI(itemNo){
-    var extrasNo = "extras"+ itemNo
+    var extrasNo = "extras"+ itemNo;
     var ifChecked = document.getElementsByName(extrasNo);
     var order = "";
     var qtybox = document.getElementsByName("quantity");

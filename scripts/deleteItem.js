@@ -1,5 +1,4 @@
 function deleteItem(itemNo){
-    alert("clicked item number " + itemNo );
     reduceTotal(itemNo);
     var storedItems = JSON.parse(localStorage.getItem("CartItems"));
     storedItems.splice(itemNo, 1);
