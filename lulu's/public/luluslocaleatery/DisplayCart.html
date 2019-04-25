@@ -1,0 +1,117 @@
+<!--Gabe created and designed-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lulu's Local Eatery</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+	<link rel="stylesheet" type="text/css" href="styles/displayCart.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">	
+	<script src="scripts/Shopping_Cart.js"></script>
+	<script src="scripts/deleteItem.js"></script>
+	<script src="scripts/displayCart.js"></script>
+  </head>
+  <body>
+    <div id = root>
+		<div class= bannerArea>
+			<a href="index.html#logo"><img src="assets/logo2.png" id="logo" alt="lulu's home logo"></a>
+		</div>
+		<div id = navArea>
+			<nav>
+				<ul id="navul">		
+					<li><a href="index.html">Home</a></li>
+					<li><a href="pingpong.html">Ping Pong Bar</a></li>
+					<li><a href="food.html">Food</a></li>
+					<li><a href="location.html">Location</a></li>
+					<li><a href="sustain.html">Sustainability</a></li>
+					<li><a href="order.html">Order Now</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="catering.html">Catering</a></li>
+					<li><a href="DisplayCart.html">Shopping cart (<span id="cartNum"></span>)</a></li>
+					<li><a onclick="clearCart()">Clear cart</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class=bodyGrid>
+		<div class=cart>
+		<span style="margin:auto; display:table;" id="DisplayCart">
+			</span>
+			<br>
+			<span id="totalPrice">$</span>
+		</div>
+   <div>
+		<div id="dropin-container"></div>
+		<button id="submit-button">Purchase</button>
+		<script src="https://js.braintreegateway.com/web/dropin/1.17.2/js/dropin.min.js"></script> 
+		<script>
+			var submitButton = document.querySelector('#submit-button');
+			var debugRequest = null;
+			var debugPayload = null;
+ 
+			braintree.dropin.create({
+				authorization: 'sandbox_x6t56s66_ktptqx9htr7bjdsf',
+				selector: '#dropin-container',
+				paypal: {
+					flow: 'checkout',
+					amount: 1600.00 // Doesn't matter, isn't validated against. Required for Braintree.
+				}
+			}, function (err, dropinInstance) {
+				if (err) { console.error(`🔒 Failed to create the Drop-in. ${err}`); return; }
+				submitButton.addEventListener('click', function () {
+ 
+					dropinInstance.requestPaymentMethod(function (err, payload) {
+						 if (err) { console.error(`🔒 Failed to POST payment. ${err}`); return; }
+ 
+						 let xhttp = new XMLHttpRequest();
+						 xhttp.open("POST", "http://localhost:3000/checkouts", true);
+						 xhttp.setRequestHeader("Content-Type", "application/json");
+ 
+						 xhttp.onreadystatechange = () => {
+								 if (xhttp.readyState === XMLHttpRequest.DONE && xhttp.status === 200) {
+									 console.log('🔑 POSTed to checkouts!')
+								 } else if ( xhttp.readyState === XMLHttpRequest.DONE ) {
+									 console.log('🤨 Uh oh!' + xhttp.status)
+									 debugRequest = xhttp;
+								 }
+						 };
+						 payload.amount = 1400.00; // Also required for Braintree.
+						 
+						 xhttp.send(JSON.stringify(payload));
+						 debugPayload = payload;
+					});
+				});
+			});
+		</script> 
+				</div>
+			</div>
+				<div class=footerArea>
+					   <div id= social>
+						  <a href="https://twitter.com/login?lang=en" target="_blank"><img src="assets/twitter2.png" alt="Twitter"></a>
+						  
+						  <a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png" alt="FaceBook"></a>
+						  
+						  <a href="https://www.youtube.com/watch?v=e00BzdF5LYA" target="_blank"><img src="assets/youtube.png" alt="YouTube"></a><br>
+						  <br>
+						  <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome" target="_blank"><img src="assets/snapchat.png" alt="Snapchat"></a>
+						  
+						  <a href="https://www.twitch.tv/login" target="_blank"><img src="assets/twitch.png" alt="Twitch"></a><br>
+						</div>
+					  <div id= info>
+						<a href="https://www.google.com/maps/place/Lulu's+Local+Eatery,+LLC/@38.5989912,-90.2430857,15z/data=!4m8!1m2!3m1!2sLulu's+Local+Eatery,+LLC!3m4!1s0x0:0x5e32f72323d673d7!8m2!3d38.5989918!4d-90.2430859" target="_blank" >3201 S Grand Ave St. Louis, MO 63118</a><br><br>
+						314-300-8215 // Monday - Saturday 11:30am-9pm<br><br>
+						ping pong bar above lulu's open all day // full bar open 5pm-12am<br><br>
+						PURCHASE A GIFT CARD<br><br>
+						Copyright &copy; 2018<br><br>
+					  </div>
+					  <div id = location>
+						<img src="assets/location.png" alt="location">
+					  </div>
+					  <div id = totop>
+						<a href="#logo"><img src="assets/totop.png" alt="to top" height="100px"></a>
+					  </div>
+		          </div>
+      </div>
+  </body>
+</html>
