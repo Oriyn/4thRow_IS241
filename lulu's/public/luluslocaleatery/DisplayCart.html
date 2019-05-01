@@ -11,6 +11,7 @@
 	<script src="scripts/Shopping_Cart.js"></script>
 	<script src="scripts/deleteItem.js"></script>
 	<script src="scripts/displayCart.js"></script>
+	<script src="scripts/Invoice.js"></script>
   </head>
   <body>
     <div id = root>
@@ -43,7 +44,7 @@
 		</div>
    <div>
 		<div id="dropin-container"></div>
-		<button id="submit-button">Purchase</button>
+		<button id="submit-button" onclick="invoiceKitchen()">Purchase</button>
 		<script src="https://js.braintreegateway.com/web/dropin/1.17.2/js/dropin.min.js"></script> 
 		<script>
 			var submitButton = document.querySelector('#submit-button');
