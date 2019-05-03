@@ -1,11 +1,16 @@
 #DisplayCart, #totalPrice{
  text-align: center;
- font-weight: bold;
-};
+ font-size: 17px;
+}
+
+#totalPrice { 
+		font-weight: bold; 
+		font-size: 20px;	
+}
 
 span #DisplayCart, #totalPrice{
     text-align: center;
-};
+}
 a {color:black;}
 a:visited {color:black;}
 .bodyGrid {
@@ -22,9 +27,30 @@ a:visited {color:black;}
 
 .cart {
     grid-area:cart;
-    margin:auto;
+	margin-top: 10px;
+	background-color: #c4dbad;
+	padding: 10px 10px 10px 10px;
+	margin-right: 20px;
 }
-.details {
-    grid-area:details;
-    margin:auto;
+
+#DisplayCart { text-align: left; }
+
+#submit-button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
+
+#submit-button:hover {background-color: #3e8e41}
+
+#submit-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
