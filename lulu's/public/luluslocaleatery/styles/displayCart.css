@@ -6,10 +6,11 @@
 #totalPrice { 
 		font-weight: bold; 
 		font-size: 20px;	
+		padding-left: 20px;
 }
 
 span #DisplayCart, #totalPrice{
-    text-align: center;
+    text-align: left;
 }
 a {color:black;}
 a:visited {color:black;}

@@ -45,7 +45,11 @@
 			background-image: url('../assets/food.png');
             color:white;
  }
- #menu #specials #discounts p { font-size: 25px; } 
+ .p{ 
+	font-size: 20px; 
+	padding-left: 30px;
+	padding-right: 30px; 
+	} 
  
   #specials { grid-area: menu;
 			border: 1px solid #000000;
