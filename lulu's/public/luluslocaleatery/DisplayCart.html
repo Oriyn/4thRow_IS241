@@ -11,7 +11,6 @@
 	<script src="scripts/Shopping_Cart.js"></script>
 	<script src="scripts/deleteItem.js"></script>
 	<script src="scripts/displayCart.js"></script>
-	<script src="scripts/Invoice.js"></script>
   </head>
   <body>
     <div id = root>
@@ -44,13 +43,25 @@
 		</div>
    <div>
 		<div id="dropin-container"></div>
-		<button id="submit-button" onclick="invoiceKitchen()">Purchase</button>
+		<input id="email" type="email" value=""></input>
+		<button id="submit-button">Purchase</button>
 		<script src="https://js.braintreegateway.com/web/dropin/1.17.2/js/dropin.min.js"></script> 
 		<script>
 			var submitButton = document.querySelector('#submit-button');
 			var debugRequest = null;
 			var debugPayload = null;
- 
+			var calculatedCharge=0;
+			
+			function isValidEmail() {
+				const email = document.getElementById("email").value.split(''); // Split gives us an array of chars
+				// JS sucks and doesnt have map filter reduce on strings, just arrays.
+				return email.filter((c)=>{ return c == '@' }).join('') != ""  // join turns that array back into a string
+			}
+
+			if (localStorage.getItem("totalPrice")){
+			calculatedCharge = localStorage.getItem("totalPrice");
+			}
+
 			braintree.dropin.create({
 				authorization: 'sandbox_x6t56s66_ktptqx9htr7bjdsf',
 				selector: '#dropin-container',
@@ -60,8 +71,12 @@
 				}
 			}, function (err, dropinInstance) {
 				if (err) { console.error(`🔒 Failed to create the Drop-in. ${err}`); return; }
+				
 				submitButton.addEventListener('click', function () {
- 
+					if(!isValidEmail()) {
+						alert('Invalid Email'); 
+						return
+					}
 					dropinInstance.requestPaymentMethod(function (err, payload) {
 						 if (err) { console.error(`🔒 Failed to POST payment. ${err}`); return; }
  
@@ -71,14 +86,15 @@
  
 						 xhttp.onreadystatechange = () => {
 								 if (xhttp.readyState === XMLHttpRequest.DONE && xhttp.status === 200) {
-									 console.log('🔑 POSTed to checkouts!')
+									 console.log('🔑 POSTed to checkouts!');
+									 alert('Payment received');
 								 } else if ( xhttp.readyState === XMLHttpRequest.DONE ) {
 									 console.log('🤨 Uh oh!' + xhttp.status)
 									 debugRequest = xhttp;
 								 }
 						 };
-						 payload.amount = 1400.00; // Also required for Braintree.
-						 
+						 payload.payment_method_nonce = payload.nonce;
+						 payload.amount = calculatedCharge; // Also required for Braintree.
 						 xhttp.send(JSON.stringify(payload));
 						 debugPayload = payload;
 					});
