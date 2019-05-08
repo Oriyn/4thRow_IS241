@@ -72,6 +72,8 @@ router.post('/checkouts', function (req, res) {
   var amount = req.body.amount; // In production you should not take amounts directly from clients
   var nonce = req.body.payment_method_nonce;
 
+  console.log(`Received request for ${amount} by ${nonce}`);
+
   gateway.transaction.sale({
     amount: amount,
     paymentMethodNonce: nonce,
